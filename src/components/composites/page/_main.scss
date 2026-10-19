@@ -1,0 +1,182 @@
+.main {
+    margin-left: 15px; /* ovo mora da se podesi na osnouv breakpoint-a - sada je ovkao */
+
+    .main-section-wrapper {
+        border-radius: $section-border-radius;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        .main-section-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 30px;
+            margin-bottom: 36px;
+
+            .main-section-header-left {
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                
+                .main-section-content-icon {
+                    margin-right: 16px;
+                }
+
+                .main-section-content-title {
+
+                    .title-text {
+                        @extend .h1;
+
+                        color: var(--main-section-title-color);
+                    }
+                }
+            }
+
+            .main-section-header-right {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                &:has(> .main-section-header-button:nth-child(3)) {
+                    .main-section-header-button {
+                        .btn {
+                            white-space: normal;
+                            overflow-wrap: anywhere;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-section {
+            padding: 0 30px 30px;
+
+            .main-section-title {
+                @extend .h2;
+
+                color: var(--main-section-title-color);
+            }
+
+            .main-section-filter-icon {
+                color: var(--main-section-filter-icon-color);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.floating-bar {
+    position: sticky;
+    bottom: 0;
+    padding: 16px 36px;
+    border-radius: 0 0 30px 30px;
+    background: var(--main-floating-bar-bg-color);
+    backdrop-filter: blur(15px);
+}
+
+
+/*  < 992px (lg) */
+@include media-breakpoint-down(lg) {
+    
+    .main {
+        margin-left: 0;
+    }
+}
+
+/* < 1400px (xl): keep three or more header actions inside the section. */
+@include media-breakpoint-down(xl) {
+    .main {
+        .main-section-wrapper {
+            .main-section-header:has(> .main-section-header-right > .main-section-header-button:nth-child(3)) {
+                flex-direction: column;
+
+                .main-section-header-left {
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+
+                .main-section-header-right {
+                    width: 100%;
+                    flex: 0 1 auto;
+                    max-width: none;
+                    margin-top: 16px !important;
+
+                    .main-section-header-button {
+                        flex: 1 1 0;
+                        min-width: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* < 768px (md) */
+@include media-breakpoint-down(md) {
+    
+    .main {
+         
+        .main-section-wrapper {
+            padding-top: 30px;
+
+            .main-section-header {
+                flex-direction: column;
+
+                .main-section-header-left {
+                    width: 100%;
+                    margin-bottom: 15px;
+
+                    &:has(~ .main-section-header-right > .main-section-header-button:nth-child(3)) {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .main-section-header-right {
+                    width: 100%;
+
+                    &:has(> .main-section-header-button:nth-child(3)) {
+                        display: block;
+                        flex: 0 1 auto;
+                        max-width: none;
+                        margin-top: 16px !important;
+
+                        .main-section-header-button:not(:last-child) {
+                            margin-bottom: 8px !important;
+                        }
+
+                        .btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* < 576px (sm) */
+@include media-breakpoint-down(sm) {
+    .main {
+         
+        .main-section-wrapper {
+
+            .main-section-header {
+                
+                .main-section-header-right {
+                    display: block;
+
+                    .main-section-header-button {
+                        
+                        .btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

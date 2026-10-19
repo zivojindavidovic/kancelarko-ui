@@ -1,0 +1,6 @@
+//#region src/icons/print.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_3513_7686)\">\n<g clip-path=\"url(#clip1_3513_7686)\">\n<path d=\"M11.4449 4.96328V3C11.4449 1.89543 10.5494 1 9.44485 1H6.55515C5.45058 1 4.55515 1.89543 4.55515 3V4.96328M11.4449 8.60728V13C11.4449 14.1046 10.5494 15 9.44485 15H6.55515C5.45058 15 4.55515 14.1046 4.55515 13V8.60728\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M3.91635 11.6077L3 11.6077C1.89543 11.6077 1 10.7122 1 9.60767L1 7C1 5.89543 1.89543 5 3 5L13 5C14.1046 5 15 5.89543 15 7L15 9.60767C15 10.7122 14.1046 11.6077 13 11.6077L11.9927 11.6077\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M3.47428 8.5542H12.5257\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n</g>\n<defs>\n<clipPath id=\"clip0_3513_7686\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n<clipPath id=\"clip1_3513_7686\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=print-DMQg5RYm.js.map

@@ -1,0 +1,6 @@
+//#region src/icons/circle-icons/birthday.svg?raw
+var e = "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle opacity=\"0.3\" cx=\"18\" cy=\"18\" r=\"18\" fill=\"#843DF3\"/>\n<g clip-path=\"url(#clip0_570_5401)\">\n<path d=\"M18 11.2186C18 12.6684 14.622 12.0936 13.3333 12.0936C12.0446 12.0936 11 10.9184 11 9.46863C11 8.01888 12.0446 6.84363 13.3333 6.84363C15.375 6.84363 18 9.76888 18 11.2186Z\" stroke=\"#843DF3\" stroke-width=\"1.4\"/>\n<path d=\"M18 11.2186C18 12.6684 21.378 12.0936 22.6667 12.0936C23.9554 12.0936 25 10.9184 25 9.46863C25 8.01888 23.9554 6.84363 22.6667 6.84363C20.625 6.84363 18 9.76888 18 11.2186Z\" stroke=\"#843DF3\" stroke-width=\"1.4\"/>\n<rect x=\"8.2\" y=\"11.9499\" width=\"19.6\" height=\"16.1\" rx=\"3.8\" stroke=\"#843DF3\" stroke-width=\"1.4\"/>\n<path d=\"M18 12.9998L18 26.9998\" stroke=\"#843DF3\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M9.28125 19.9999L27 19.9998\" stroke=\"#843DF3\" stroke-width=\"1.4\" stroke-linecap=\"square\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_570_5401\">\n<rect width=\"24\" height=\"24\" fill=\"white\" transform=\"translate(6 4.5)\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=birthday-Di587ss2.js.map

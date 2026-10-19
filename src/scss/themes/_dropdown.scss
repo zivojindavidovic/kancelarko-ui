@@ -1,0 +1,16 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+  --dropdown-menu-bg: #{$white};
+  --dropdown-item-text-color: #{$gray-50};
+  --dropdown-item-active-bg: rgba(#{$blue-rgb}, 0.4);
+  --dropdown-item-active-text-color: #{$gray};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --dropdown-menu-bg: #{$gray};
+  --dropdown-item-text-color: #{$gray-50};
+  --dropdown-item-active-bg: rgba(#{$blue-rgb}, 0.4);
+  --dropdown-item-active-text-color: #{$gray-10};
+}

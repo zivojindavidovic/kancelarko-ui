@@ -1,0 +1,52 @@
+.avatar-container {
+    
+    .avatar-wrapper{
+        background-color: rgba(var(--primary-rgb), 0.4);
+    }
+
+    .avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Close badge */
+    .close-badge {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 14px;
+        height: 14px;
+        color: var(--avatar-close-badge-color);
+        background: var(--avatar-close-badge-bg);
+        cursor: pointer;
+    }
+    
+    .close-icon > span {
+        height: 70%;
+        width: 70%;
+    }
+    
+    .close-line {
+        position: absolute;
+        width: 6px;
+        height: 2px;
+        background: var(--avatar-close-badge-color);
+        border-radius: 2px;
+    }
+    
+    .rotate-45 {
+        transform: rotate(45deg);
+    }
+    
+    .rotate-minus-45 {
+        transform: rotate(-45deg);
+    }
+    
+    .avatar-initials {
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}

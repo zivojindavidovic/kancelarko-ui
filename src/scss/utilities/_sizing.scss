@@ -1,0 +1,31 @@
+$sizes: (
+  0: 0,
+  54: 54px,
+  100: 100px,
+  200: 200px,
+  300: 300px,
+  350: 350px,
+  365: 365px,
+  400: 400px,
+  500: 500px,
+  550: 550px,
+  600: 600px,
+);
+
+$width-percent: (
+  20: 20%,
+  80: 80%,
+  100: 100%,
+);
+
+@each $key, $value in $sizes {
+  .w-#{$key}px { width: $value; }
+  .h-#{$key}px { height: $value; }
+  .min-w-#{$key}px { min-width: $value; }
+  .max-w-#{$key}px { max-width: $value; }
+  .max-h-#{$key}px { max-height: $value; }
+}
+
+@each $key, $value in $width-percent {
+  .w-#{$key}percent { width: $value; }
+}

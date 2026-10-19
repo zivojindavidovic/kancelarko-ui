@@ -1,0 +1,21 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --filter-bg: #{$white};
+    --filter-border-radius: 10px;
+    --filter-gap-main: 36px;
+
+    --filter-text-color: #{$gray-50};
+    --filter-date-input-bg-color: #{$gray-10};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --filter-bg: #{$gray};
+    --filter-border-radius: 10px;
+    --filter-gap-main: 36px;
+
+    --filter-text-color: #{$gray-50};
+    --filter-date-input-bg-color: #{$gray-dark};
+    
+}

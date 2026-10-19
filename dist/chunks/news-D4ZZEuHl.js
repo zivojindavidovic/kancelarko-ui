@@ -1,0 +1,6 @@
+//#region src/icons/news.svg?raw
+var e = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 1.7002C17.6995 1.7002 22.2998 6.30053 22.2998 12C22.2998 17.6962 18.1017 21.8653 12.7588 22.2549L1.7002 22.2969V12C1.7002 6.32214 6.30147 1.7002 12 1.7002Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-miterlimit=\"10\"/>\n<path d=\"M6 9H17.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M6 13H17.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M6 17L13 17\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=news-D4ZZEuHl.js.map

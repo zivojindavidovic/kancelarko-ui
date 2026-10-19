@@ -1,0 +1,62 @@
+.pill {
+    padding: 4px 8px;
+    @extend .b-small-font;
+    // font-weight: 500;
+
+    &.has-icon {
+        border-radius: 10px;
+
+        .pill-wrapper {
+            display: inline-flex;
+
+            .pill-icon {
+                margin-left: 4px;
+                display: flex;
+                align-items: center;
+                
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    &.bg-success {
+        background-color: var(--pill-success-bg) !important;
+        color: var(--pill-success-text);
+    }
+
+    &.bg-warning {
+        background-color: var(--pill-warning-bg) !important;
+        color: var(--pill-warning-text);
+    }
+
+    &.bg-danger {
+        background-color: var(--pill-danger-bg) !important;
+        color: var(--pill-danger-text);
+    }
+
+    &.bg-primary {
+        background-color: var(--pill-primary-bg) !important;
+        color: var(--pill-primary-text);
+    }
+
+    &.bg-disabled {
+        background-color: var(--pill-disabled-bg) !important;
+        color: var(--pill-disabled-text);
+    }
+
+    &.bg-filter {
+        background-color: var(--pill-filter-bg) !important;
+        color: var(--pill-filter-text);
+
+        &:hover {
+            background-color: var(--pill-filter-hover-bg) !important;
+        }
+    }
+
+    &.h4 {
+        font-weight: 500;
+    }
+}

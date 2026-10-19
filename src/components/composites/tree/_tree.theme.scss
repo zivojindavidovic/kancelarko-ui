@@ -1,0 +1,70 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    // TREE
+    --tree-background-color: #{$gray-10};
+    --tree-border-color: #{$gray-30};
+    --tree-header-text-color: #{$gray};
+    
+    --tree-content-border-color: var(--tree-border-color);
+    
+    --tree-search-background-color: var(--tree-background-color);
+    --tree-search-icon-color: #{$gray-50};
+    --tree-search-placeholder-color: var(--tree-search-icon-color);
+    
+    // Tree Node
+    --tree-node-hover-background-color: rgba(#{$gray-rgb}, 0.1);
+    --tree-node-highlight-background-color: rgba(var(--primary-rgb), 0.2);
+    --tree-node-highlight-border-color: var(--primary);
+    
+    --tree-expand-icon-color: var(--tree-search-icon-color);
+    --tree-expand-icon-color-checked: var(--tree-header-text-color);
+    --tree-expand-icon-hover-color: var(--primary);
+    
+    --tree-checkbox-background-color: #{$white};
+    --tree-checkbox-border-color: var(--tree-search-icon-color);
+    --tree-checkbox-checkmark-color: var(--primary);
+    --tree-checkbox-checked-border-color: var(--primary);
+    --tree-checkbox-disabled-background-color: var(--tree-search-icon-color);
+    --tree-checkbox-disabled-border-color: var(--tree-header-text-color);
+    
+    --tree-icon-color: var(--tree-search-icon-color);
+    --tree-icon-color-checked: var(--primary);
+    --tree-label-color: var(--tree-search-icon-color);
+    --tree-label-color-checked: var(--tree-header-text-color);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    // TREE
+    --tree-background-color: #{$gray-dark};
+    --tree-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --tree-header-text-color: #{$gray-10};
+    
+    --tree-content-border-color: var(--tree-border-color);
+    
+    --tree-search-background-color: var(--tree-background-color);
+    --tree-search-icon-color: #{$gray-50};
+    --tree-search-placeholder-color: var(--tree-search-icon-color);
+    
+    // Tree Node
+    --tree-node-hover-background-color: rgba(#{$gray-50-rgb}, 0.1);
+    --tree-node-highlight-background-color: rgba(var(--primary-rgb), 0.2);
+    --tree-node-highlight-border-color: var(--primary);
+    
+    --tree-expand-icon-color: var(--tree-search-icon-color);
+    --tree-expand-icon-color-checked: var(--tree-header-text-color);
+    --tree-expand-icon-hover-color: var(--primary);
+    
+    --tree-checkbox-background-color: #{$gray};
+    --tree-checkbox-border-color: var(--tree-search-icon-color);
+    --tree-checkbox-checkmark-color: var(--primary);
+    --tree-checkbox-checked-border-color: var(--primary);
+    --tree-checkbox-disabled-background-color: var(--tree-search-icon-color);
+    --tree-checkbox-disabled-border-color: var(--tree-header-text-color);
+    
+    --tree-icon-color: var(--tree-search-icon-color);
+    --tree-icon-color-checked: var(--primary);
+    --tree-label-color: var(--tree-search-icon-color);
+    --tree-label-color-checked: var(--tree-header-text-color);
+}

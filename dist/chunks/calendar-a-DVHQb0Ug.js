@@ -1,0 +1,6 @@
+//#region src/icons/calendar-a.svg?raw
+var e = "<svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\">\n  <path d=\"M5 3.7502H11C12.8225 3.7502 14.2998 5.22746 14.2998 7.05V12.0002C14.2997 13.8226 12.8225 15.3 11 15.3H5C3.17753 15.3 1.7003 13.8226 1.7002 12.0002V7.05C1.7002 5.22746 3.17746 3.7502 5 3.7502Z\" stroke-width=\"1.4\"/>\n  <path d=\"M1.70001 8H14.3001\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n  <path d=\"M5.45457 1.875V5.04545\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n  <path d=\"M10.5455 1.875V5.04545\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=calendar-a-DVHQb0Ug.js.map

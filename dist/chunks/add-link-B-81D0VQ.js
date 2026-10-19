@@ -1,0 +1,6 @@
+//#region src/icons/add-link.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_5400_417)\">\n<path d=\"M10.3466 12.5783L8.90594 14.019C7.51353 15.4114 5.25598 15.4114 3.86357 14.019C2.47116 12.6266 2.47116 10.369 3.86357 8.97662L5.30425 7.53594\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M12.5076 10.4173L13.9483 8.97664C15.3407 7.58423 15.3407 5.32668 13.9483 3.93427C12.5559 2.54186 10.2984 2.54186 8.90595 3.93427L7.46527 5.37495\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M7.28516 10.5974L10.5267 7.35589\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M0.915237 3.1189L5.15311 3.1189\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M3.03417 1V5.23787\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_5400_417\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=add-link-B-81D0VQ.js.map

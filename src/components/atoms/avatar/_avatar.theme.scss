@@ -1,0 +1,12 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --avatar-close-badge-bg: #{$white};
+    --avatar-close-badge-color: #{$gray};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --avatar-close-badge-bg: #{$gray};
+    --avatar-close-badge-color: #{$gray-10};
+}

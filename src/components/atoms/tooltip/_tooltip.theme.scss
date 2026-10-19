@@ -1,0 +1,12 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --tooltip-background-color: #{$white};
+    --tooltip-text-color: #{$gray-dark};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --tooltip-background-color: #{$gray};
+    --tooltip-text-color: #{$white};
+}

@@ -1,0 +1,61 @@
+.employee-info-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+
+    .employee-info-card-wrapper {
+        display: flex;
+        align-items: flex-start;
+        // flex: 1;
+        gap: 12px;
+
+        .employee-avatar {
+            display: flex;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+        }
+
+        .employee-data-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px ;
+
+            .employee-name {
+                @extend .b-medium-font;
+                color: var(--emp-card-name-color);
+            }
+
+            .employee-data-list {
+                display: flex;
+                gap: 16px;
+                // max-width: calc(100% - 48px - 16px); //  -48px avatar -16px spacing
+                // overflow-x: auto;
+
+                .employee-data-item {
+                    @extend .b-small-font;
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
+                    color: var(--emp-card-data-text-color);
+                }
+            }
+        }
+    }
+
+    &.has-bottom-border {
+        border-bottom: 1px solid var(--emp-card-border-color);
+        padding-bottom: 16px;
+    }
+
+    .employee-info-card-date {
+        @extend .b-small-font;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        margin-left: auto; 
+    }
+}

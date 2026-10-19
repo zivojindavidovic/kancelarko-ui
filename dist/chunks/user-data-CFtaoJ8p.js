@@ -1,0 +1,6 @@
+//#region src/icons/user-data.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_5295_6710)\">\n<path d=\"M12.3159 7.0794C13.1662 7.0794 13.8556 6.39005 13.8556 5.5397C13.8556 4.68935 13.1662 4 12.3159 4C11.4655 4 10.7762 4.68935 10.7762 5.5397C10.7762 6.39005 11.4655 7.0794 12.3159 7.0794Z\" fill=\"currentColor\"/>\n<path d=\"M9.74992 12.4302C9.25389 12.4302 8.88785 11.8999 9.03153 11.3731C9.44204 9.83714 10.7283 8.71851 12.2506 8.71851C13.7729 8.71851 15.0592 9.83714 15.4697 11.3731C15.6099 11.8999 15.2473 12.4302 14.7513 12.4302H9.74992Z\" fill=\"currentColor\"/>\n<path d=\"M1 1L15 1\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M1 15L15 15\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M1 8L6 8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_5295_6710\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=user-data-CFtaoJ8p.js.map

@@ -1,0 +1,17 @@
+.k-scrollbar {
+    // scrollbar-color: var(--scroll-color-mix);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scroll-color-track);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-color-thumb);
+    border-radius: 10px;
+}

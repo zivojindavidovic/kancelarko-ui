@@ -1,0 +1,68 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    
+    /* Header */
+    --dt-header-bg: #{$gray-10};
+    --dt-header-dark-bg: #{$gray-10};
+    --dt-header-text-color: #{$blue};
+    --dt-header-sort-color: #{$gray-50};
+    --dt-sort-icon-color: #{$gray-50};
+
+    /* Rows */
+    --dt-row-text-color: #{$gray};
+    --dt-row-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --dt-row-hover-bg: rgba(255, 255, 255, 0.03);
+    --dt-row-danger-bg: rgba(#{$red-rgb}, 0.15);
+    --dt-row-danger-hover-bg: rgba(#{$red-rgb}, 0.1);
+
+    /* Info text */
+    --dt-info-text-color: rgba(#{$gray-50-rgb}, 0.8);
+
+    /* PAGINATION */
+    --dt-pagination-text-color: #{$gray-50};
+    --dt-pagination-active-text-color: #{$blue};
+    --dt-pagination-active-bg: rgba(#{$blue-rgb}, 0.4);
+    --dt-pagination-arrow-color: #{$gray-50};
+    --dt-pagination-disabled-opacity: 0.2;
+
+    --dt-action-item-text-color: #{$gray-50};
+    --dt-action-item-icon-hover-color: #{$blue};
+    
+    --dt-icon-value: #{$blue};
+    --dt-icon-no-value: #{$gray-30};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+
+    /* Header */
+    --dt-header-bg: #{$gray};
+    --dt-header-dark-bg: #{$gray-dark};
+    --dt-header-text-color: #{$blue};
+    --dt-header-sort-color: #{$gray-50};
+    --dt-sort-icon-color: #{$gray-50};
+
+    /* Rows */
+    --dt-row-text-color: #{$gray-10};
+    --dt-row-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --dt-row-hover-bg: rgba(255, 255, 255, 0.03);
+    --dt-row-danger-bg: rgba(#{$red-rgb}, 0.15);
+    --dt-row-danger-hover-bg: rgba(#{$red-rgb}, 0.1);
+
+    /* Info text */
+    --dt-info-text-color: rgba(#{$gray-50-rgb}, 0.8);
+
+    /* PAGINATION */
+    --dt-pagination-text-color: #{$gray-50};
+    --dt-pagination-active-text-color: #{$blue};
+    --dt-pagination-active-bg: rgba(#{$blue-rgb}, 0.4);
+    --dt-pagination-arrow-color: #{$gray-50};
+    --dt-pagination-disabled-opacity: 0.2;
+
+    --dt-action-item-text-color: #{$gray-50};
+    --dt-action-item-icon-hover-color: #{$blue};
+    
+    --dt-icon-value: #{$blue};
+    --dt-icon-no-value: #{$gray-50};
+}

@@ -1,0 +1,26 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --sidebar-bg-color: rgba(232, 232, 232, 0.7);
+    --sidebar-bg-darker-color: rgba(232, 232, 232, 0.9);
+    --sidebar-link-color: #{$gray-50};
+    --sidebar-link-active-color: #{$gray};
+    --sidebar-link-hover-color: #{$gray};
+    --sidebar-icon-color: #{$gray-50};
+    --sidebar-title-color: #{$gray};
+    --sidebar-toggle-icon-hover-color: #{$gray};
+    --sidebar-row-separator-color: #{$gray-50};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --sidebar-bg-color: rgba(15, 15, 15, 0.7); 
+    --sidebar-bg-darker-color: rgba(15, 15, 15, 0.9); 
+    --sidebar-link-color: #{$gray-50};
+    --sidebar-link-active-color: #{$gray-10};
+    --sidebar-link-hover-color: #{$gray-10};
+    --sidebar-icon-color: #{$gray-50};
+    --sidebar-title-color: #{$gray-10};
+    --sidebar-toggle-icon-hover-color: #{$gray-10};
+    --sidebar-row-separator-color: #{$gray-50};
+}

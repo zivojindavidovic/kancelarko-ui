@@ -1,0 +1,74 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --calendar-border-color: #{$gray-30};
+    --calendar-text-color: #{$gray-50};
+    --calendar-header-bg: #{$gray-10};
+    --calendar-highlight-bg: rgba(#{$blue-rgb}, 0.3);
+    --calendar-highlight-weekday-bg: rgba(#{$blue-rgb}, 0.1);
+
+    --calendar-event-invoice-color: #CE64E9;
+    --calendar-event-invoice-bg: rgba(189, 43, 228, 0.3);
+    --calendar-event-holiday-color: #15B069;
+    --calendar-event-holiday-bg: rgba(21, 176, 105, 0.3);
+    --calendar-event-birthday-color: #843DF3;
+    --calendar-event-birthday-bg: rgba(132, 61, 243, 0.3);
+    --calendar-event-slava-color: #60C5F7;
+    --calendar-event-slava-bg: rgba(96, 197, 247, 0.3);
+    --calendar-event-document-color: #5DE2D5;
+    --calendar-event-document-bg: rgba(93, 226, 213, 0.3);
+    --calendar-event-epostar-color: #9FEC42;
+    --calendar-event-epostar-bg: rgba(159, 236, 66, 0.3);
+    --calendar-event-kadrovik-color: #{$blue};
+    --calendar-event-kadrovik-bg: rgba(#{$blue-rgb}, 0.26);
+    --calendar-event-task-color: #049BE5;
+    --calendar-event-task-bg: rgba(4, 155, 229, 0.3);
+    --calendar-event-note-color: #F7659B;
+    --calendar-event-note-bg: rgba(247, 101, 155, 0.3);
+    --calendar-event-jubilee-color: #{$light-violet};
+    --calendar-event-jubilee-bg: rgba(#{$light-violet-rgb}, 0.22);
+    --calendar-event-alarm-color: #FFB631;
+    --calendar-event-alarm-bg: rgba(255, 182, 49, 0.3);
+    --calendar-event-resource-color: #E67C73;
+    --calendar-event-resource-bg: rgba(230, 124, 115, 0.3);
+
+    --calendar-toolbar-title-color: #{$gray-dark};
+    --calendar-timegrid-axis-text-color: #{$gray-dark};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --calendar-border-color: #{$gray-90};
+    --calendar-text-color: #{$gray-50};
+    --calendar-header-bg: #{$gray};
+    --calendar-highlight-bg: rgba(#{$blue-rgb}, 0.3);
+    --calendar-highlight-weekday-bg: rgba(#{$blue-rgb}, 0.1);
+
+    --calendar-event-invoice-color: #CE64E9;
+    --calendar-event-invoice-bg: rgba(189, 43, 228, 0.3);
+    --calendar-event-holiday-color: #15B069;
+    --calendar-event-holiday-bg: rgba(21, 176, 105, 0.3);
+    --calendar-event-birthday-color: #843DF3;
+    --calendar-event-birthday-bg: rgba(132, 61, 243, 0.3);
+    --calendar-event-slava-color: #60C5F7;
+    --calendar-event-slava-bg: rgba(96, 197, 247, 0.3);
+    --calendar-event-document-color: #5DE2D5;
+    --calendar-event-document-bg: rgba(93, 226, 213, 0.3);
+    --calendar-event-epostar-color: #9FEC42;
+    --calendar-event-epostar-bg: rgba(159, 236, 66, 0.3);
+    --calendar-event-kadrovik-color: #{$blue};
+    --calendar-event-kadrovik-bg: rgba(#{$blue-rgb}, 0.26);
+    --calendar-event-task-color: #049BE5;
+    --calendar-event-task-bg: rgba(4, 155, 229, 0.3);
+    --calendar-event-note-color: #F7659B;
+    --calendar-event-note-bg: rgba(247, 101, 155, 0.3);
+    --calendar-event-jubilee-color: #{$light-violet};
+    --calendar-event-jubilee-bg: rgba(#{$light-violet-rgb}, 0.22);
+    --calendar-event-alarm-color: #FFB631;
+    --calendar-event-alarm-bg: rgba(255, 182, 49, 0.3);
+    --calendar-event-resource-color: #E67C73;
+    --calendar-event-resource-bg: rgba(230, 124, 115, 0.3);
+
+    --calendar-toolbar-title-color: #{$white};
+    --calendar-timegrid-axis-text-color: #{$white};
+}

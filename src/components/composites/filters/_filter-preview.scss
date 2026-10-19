@@ -1,0 +1,64 @@
+.filter-preview {
+    gap: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    background: var(--filter-preview-bg);
+
+    &__header {
+        gap: 20px;
+        
+        border-radius: 10px;
+    }
+
+    &__title {
+        @extend .b-small-font;
+        color: var(--filter-title);
+    }
+
+    &__clearButton {
+        @extend .b-small-font;
+        color: var(--primary);
+        display: inline-block;
+        margin-left: 24px;
+
+        &:hover {
+            color: var(--filter-link-hover-color);
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+        color: var(--filter-icon-color);
+        cursor: pointer;
+    }
+    
+    &__list {
+        gap: 16px;
+    }
+
+    &__item {
+        gap: 20px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--filter-item-border-bottom);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    
+    &__item-title {
+        @extend .b-small-font;
+        color: var(--filter-item-title);
+    }
+
+    &__values {
+        margin-top: 8px;
+        gap: 8px;
+
+        .pill {
+            &:hover {
+                color: var(--primary);
+            } 
+        }
+    } 
+}

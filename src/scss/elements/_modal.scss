@@ -1,0 +1,87 @@
+.modal {
+
+    .modal-dialog {
+
+        .modal-content {
+            background-color: var(--modal-background);
+            color: var(--modal-text-color);
+            padding: 36px;
+            border-radius: 30px;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.70);
+
+
+            .modal-header {
+                padding: 0 0 24px 0;
+                border-color: var(--modal-border-color);
+
+                .modal-title {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                .btn-close-custom {
+                    background: none;
+                    border: 0;
+                    padding: .5rem .5rem;
+                    margin: -.5rem -.5rem -.5rem auto;
+                    
+                    span {
+                        color: var(--modal-close-icon-color);
+                    }
+                }
+            }
+
+            .modal-meta {
+                border-bottom: 1px solid var(--modal-border-color);
+            
+                .modal-meta-row {
+
+                    .modal-meta-label {
+                        font-size: 16px;
+                    }
+
+                    .modal-meta-wrapper {
+                        font-size: 14px;
+                        /*  */
+                        .modal-meta-date {
+                            @extend .b-small-font ;
+                            color: var(--modal-muted-text-color);
+                        }
+
+                        .modal-meta-author {
+                            display: flex;
+
+                            .modal-meta-author-avatar {
+                                width: 24px; height: 24px;
+                                border-radius: 100px;
+                                overflow: hidden;
+                                margin-right: 10px;
+
+                                img {
+                                    width: 24px ;
+                                }
+                            }
+
+                            .modal-meta-author-name {
+                                color: var(--modal-muted-text-color);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-body {
+                padding: 36px 0 0 0;
+
+                & .hover-primary-color:hover{
+                    color: var(--primary);
+                }
+            }
+
+            .modal-footer {
+                margin-top: 30px;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.Toastify {
+
+    .Toastify__toast-container {
+
+        .Toastify__toast {
+            background: var(--toast-background-color); //no koristimo theme iz toast-a, nego nas theme.scss
+            backdrop-filter: blur(15px);
+            padding: 16px;
+            border-radius: 10px;
+
+            .Toastify__toast-body {
+                @extend .b-small-font;
+                padding: 0px;
+                color: var(--toast-body-text-color);
+
+                /* ikonica sa leve strane */
+                .Toastify__toast-icon {
+                    width: 36px;
+                }
+
+                .toast-title {
+                    color: var(--toast-title-text-color);
+                    display: block;
+                    margin-bottom: 6px;
+
+                    &.toast-link {
+                        text-decoration: none;
+
+                        &:hover {
+                            @extend .primary-color;
+                            text-decoration: underline;
+                            transition: color 0.3s ease;
+                        }
+                    }
+                }
+
+                .toast-body {
+                    color: var(--toast-body-text-color);
+                    display: block;
+
+                    a {
+                       @extend .primary-color; 
+                    }
+                }
+                
+            }
+
+            .Toastify__close-button {
+                color: var(--toast-close-button-color);
+            }
+
+            .Toastify__progress-bar {
+                background: var(--toast-progress-bar-color);
+            }
+
+
+
+        }
+    }
+    
+}

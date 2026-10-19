@@ -1,0 +1,6 @@
+//#region src/icons/legend.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.40507 1.85787L1.35088 4.31765C1.19993 4.66986 1.12446 4.84597 1.21209 4.94121C1.29973 5.03645 1.48149 4.97587 1.84503 4.85469L1.84503 4.85469L2.64624 4.58762C2.70893 4.56672 2.74027 4.55627 2.77273 4.55627C2.80518 4.55627 2.83653 4.56672 2.89922 4.58762L3.70043 4.85469L3.70043 4.85469C4.06396 4.97587 4.24573 5.03645 4.33336 4.94121C4.421 4.84597 4.34552 4.66986 4.19458 4.31765L3.14039 1.85787C2.9832 1.4911 2.90461 1.30772 2.77273 1.30772C2.64085 1.30772 2.56226 1.4911 2.40507 1.85787Z\" stroke=\"currentColor\"/>\n<rect x=\"1.59091\" y=\"6.90906\" width=\"2.36364\" height=\"2.36364\" rx=\"0.2\" stroke=\"currentColor\"/>\n<circle cx=\"2.77273\" cy=\"12.8182\" r=\"1.18182\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M6.9091 3.36365H14.5909\" stroke=\"currentColor\" stroke-linecap=\"round\"/>\n<path d=\"M6.9091 8.09094H14.5909\" stroke=\"currentColor\" stroke-linecap=\"round\"/>\n<path d=\"M6.9091 12.8182H14.5909\" stroke=\"currentColor\" stroke-linecap=\"round\"/>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=legend-k9YibWep.js.map

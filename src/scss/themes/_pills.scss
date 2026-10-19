@@ -1,0 +1,34 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --pill-warning-text: #{$yellow};
+    --pill-warning-bg: rgba(#{$yellow-rgb}, 0.3);
+    --pill-success-text: #{$green};
+    --pill-success-bg: rgba(#{$green-rgb}, 0.3);
+    --pill-danger-text: #{$red};
+    --pill-danger-bg: rgba(#{$red-rgb}, 0.3);
+    --pill-primary-text: #{$blue};
+    --pill-primary-bg: rgba(#{$blue-rgb}, 0.3);
+    --pill-disabled-text: #{$gray-50};
+    --pill-disabled-bg: rgba(#{$gray-50-rgb}, 0.30);
+    --pill-filter-text: #{$gray-50};
+    --pill-filter-bg: #{$white};
+    --pill-filter-hover-bg: rgba(#{$blue-rgb}, 0.30);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --pill-warning-text: #{$yellow};
+    --pill-warning-bg: rgba(#{$yellow-rgb}, 0.3);
+    --pill-success-text: #{$green};
+    --pill-success-bg: rgba(#{$green-rgb}, 0.3);
+    --pill-danger-text: #{$red};
+    --pill-danger-bg: rgba(#{$red-rgb}, 0.3);
+    --pill-primary-text: #{$blue};
+    --pill-primary-bg: rgba(#{$blue-rgb}, 0.3);
+    --pill-disabled-text: #{$gray-50};
+    --pill-disabled-bg: rgba(#{$gray-50-rgb}, 0.30);
+    --pill-filter-text: #{$gray-50};
+    --pill-filter-bg: #{$gray};
+    --pill-filter-hover-bg: rgba(#{$blue-rgb}, 0.30);
+}

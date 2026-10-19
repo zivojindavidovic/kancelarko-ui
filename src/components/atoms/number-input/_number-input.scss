@@ -1,0 +1,29 @@
+/* NUMBER INPUT - strelice gore/dole (osnovni stil polja je u atoms/text-input/_text-input.scss) */
+.input-group .input-group-icon.number-input-controls {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .btn {
+                padding: 0;
+                width: 16px;
+                height: 16px;
+                border: none;
+
+                &:active,
+                &:focus {
+                    border: none;
+                }
+
+                &:hover {
+                    svg {
+                        color: var(--primary);
+                    }
+                }
+
+                svg {
+                    color: var(--input-icon-color);
+                }
+            }
+}

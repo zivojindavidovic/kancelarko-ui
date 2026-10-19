@@ -1,0 +1,16 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --app-card-background-color: #{$gray-10};
+    --app-card-gray-background-color-opacity-60: #{rgba($white, 0.6)};
+    --app-card-border-color: #{$gray-30};
+    --app-card-divider-border-color: #{$gray-30};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --app-card-background-color: #{$gray-dark};
+    --app-card-gray-background-color-opacity-60: #{rgba($gray, 0.6)};
+    --app-card-border-color: #{$gray-90};
+    --app-card-divider-border-color: #{$gray-90};
+}

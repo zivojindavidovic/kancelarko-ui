@@ -1,0 +1,16 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --emp-card-name-color: #{$blue};
+    --emp-card-data-text-color: #{$gray-50};
+    --emp-card-data-icon-color: #{$gray-50};
+    --emp-card-border-color: #{$gray-30};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --emp-card-name-color: #{$blue};
+    --emp-card-data-text-color: #{$gray-50};
+    --emp-card-data-icon-color: #{$gray-50};
+    --emp-card-border-color: #{$gray-90};
+}

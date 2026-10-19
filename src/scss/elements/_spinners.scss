@@ -1,0 +1,17 @@
+@keyframes spinner-rotate {
+    to {
+        transform: rotate(360deg) /* rtl:ignore */;
+    }
+}
+
+.spinner-kancelarko {
+    transform: rotate(0);
+    animation: 0.75s linear infinite spinner-rotate;
+    border-radius: 100%;
+
+    .icon-spinner {
+        width: 36px;
+        height: 36px;
+        display: block;
+    }
+}

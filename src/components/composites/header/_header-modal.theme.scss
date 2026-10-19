@@ -1,0 +1,37 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --primary-rgb: #{$blue-rgb};
+
+    --header-modal-bg: #{$white};
+    --header-modal-border-color: #{$gray-50};
+    --header-modal-title-color: #{$gray};
+    --header-modal-menu-tab-text-color: #{$gray-50};
+    --header-modal-menu-tab-text-color-active: #{$gray};
+    --header-modal-menu-tab-border-color-active: var(--primary);
+    
+    --header-modal-action-text-color: var(--primary);
+    --header-modal-text-color: #{$gray};
+    --header-modal-text-muted-color: #{$gray-50};
+    --header-modal-text-muted-color-light: #{$gray-30};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --primary-rgb: #{$blue-rgb};
+    
+    --header-modal-bg: #{$gray};
+    --header-modal-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --header-modal-title-color: #{$gray-10};
+    --header-modal-menu-tab-text-color: #{$gray-50};
+    --header-modal-menu-tab-text-color-active: #{$gray-10};
+    --header-modal-menu-tab-border-color-active: var(--primary);
+
+    --header-modal-action-text-color: var(--primary);
+    --header-modal-text-color: #{$gray-10};
+    --header-modal-text-muted-color: #{$gray-50};
+    --header-modal-text-muted-color-light: #{$gray-30};
+
+}

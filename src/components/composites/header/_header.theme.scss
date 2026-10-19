@@ -1,0 +1,16 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --header-icon-color: #{$gray};
+    --header-apps-icon-color: #{$gray};
+    --header-icon-disabled-color: #{$gray-30};
+    --header-mobile-bg: rgba(232, 232, 232, 0.7);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --header-icon-color: #{$gray-10};
+    --header-apps-icon-color: #{$gray-10};
+    --header-icon-disabled-color: #{$gray-70};
+    --header-mobile-bg: rgba(15, 15, 15, 0.7);
+}

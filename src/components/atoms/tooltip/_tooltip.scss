@@ -1,0 +1,30 @@
+.v-popper__popper {
+
+    .v-popper__wrapper {
+
+        /* ovde ide sadrzaj */
+        .v-popper__inner {
+            @extend .b-labels;
+            border-radius: 10px;
+            background: var(--tooltip-background-color);
+            color: var(--tooltip-text-color);
+            padding: 10px;
+            box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.70);
+            max-width: 320px;
+
+            /* ako nema title i body */
+            .app-tooltip-text {}
+
+            .app-tooltip-title{
+                margin-bottom: 6px;
+            }
+            .app-tooltip-body {}
+        }
+
+        .v-popper__arrow-container {
+            .v-popper__arrow-outer {
+                border-color: var(--tooltip-background-color);
+            }
+        }
+    }
+}

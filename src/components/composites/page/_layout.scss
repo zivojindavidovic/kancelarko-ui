@@ -1,0 +1,67 @@
+
+
+
+.main-section-wrapper {
+    display: flex;
+    padding: 0;
+    
+    .sidebar {
+        width: $sidebar_width;
+        transition: width 0.2s ease;
+
+        /* kada je sidebar 'sklopljen' */
+        &.sidebar-minimized {
+            width: $sidebar_width_closed;
+        }
+    }
+
+    .content {
+        width: calc(100% - $sidebar_width);
+        transition: width 0.2s ease;
+        
+        /* kada je sidebar 'sklopljen' */
+        &.sidebar-minimized {
+            width: calc(100% - $sidebar_width_closed);
+        }
+    }
+}
+
+
+/*  < 992px (lg) */
+@include media-breakpoint-down(lg) {
+    .main-section-wrapper {
+
+        .sidebar {
+            // display: none;
+            z-index: 10;
+            position: absolute;
+            top: 96px;
+            width: calc(100% - 30px);
+        }
+
+        .content {
+            width: 100%;
+
+            /* kada je mali ekran, a neko je zatvorio pre toga sidebar, moramo da prosirimo div na 100% */
+            &.sidebar-minimized {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+.section-bg-theme,
+.section-bg-theme-darker {
+    backdrop-filter: blur(6px);
+}
+
+.section-bg-theme {
+    background-color: var(--main-section-bg-color);
+}
+
+.section-bg-theme-darker {
+    background-color: var(--main-section-bg-darker-color);
+}

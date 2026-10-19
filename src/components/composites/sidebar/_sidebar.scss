@@ -1,0 +1,337 @@
+/* TODO
+    1. Scroll na notifikacijama
+*/
+
+
+.sidebar {
+    margin: 0 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: var(--sidebar-bg-color);
+    backdrop-filter: blur(6px);
+
+    .sidebar-header {
+        padding-top: 36px;
+        margin-bottom: 24px;
+        
+        .sidebar-header-row {
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+
+            .header-menu-icon {
+                width: 24px;
+                height: 24px;
+                margin-right: 24px;
+                color: var(--sidebar-icon-color);
+                cursor: pointer;
+            }
+
+            .header-logo {
+                width: 100px;
+                margin-right: 12px;
+
+                svg {
+                    height: 48px;
+                }
+            }
+
+            .header-title {
+                color: var(--sidebar-title-color);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 17px;
+            }
+
+        }
+    }
+
+    .sidebar-content {
+        padding-bottom: 36px;
+        
+        .sidebar-navigation {
+
+            .sidebar-nav-row {
+                padding: 0 24px;
+
+                .sidebar-nav-item {
+                    position: relative;
+                    display: flex;
+                    padding: 16px 0;
+
+                    .nav-icon {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 12px;
+                        color: var(--sidebar-icon-color);
+                    }
+
+                    .nav-link {
+                        flex: 1;
+                        min-width: 0;
+                        a {
+                            color: var(--sidebar-link-color);
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 17px;
+                            transition: color 0.2s ease, opacity 1s ease;
+                            opacity: 1;
+
+                            &:hover {
+                                color: var(--sidebar-link-hover-color);
+                            }
+                        }
+                    }
+
+                    .sidebar-module-icon {
+                        margin-right: 16px;
+                        transition: transform 0.2s ease;
+                    }
+
+                    .sidebar-module-title {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 22px; /* 122.222% */
+                        color: var(--sidebar-title-color);
+                    }
+
+                    .nav-toggle-children {
+                        color: var(--sidebar-icon-color);
+                        cursor: pointer;
+                        transition: color 0.2s ease, opacity 1s ease;
+                        display: flex;
+                        align-items: center;
+                        opacity: 1;
+
+                        &:hover {
+                            color: var(--sidebar-toggle-icon-hover-color);
+                        }
+
+                        .animation {
+                            transition: transform 0.3s ease;
+                            transform: rotate(0deg);
+                        }
+
+                        .animation.expanded {
+                            transform: rotate(-180deg);
+                        }
+                    }
+
+                    &.active,
+                    &.has-active-child {
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: -24px;
+                            width: 3px;
+                            height: 26px;
+                            transform: translateY(-50%);
+                            background-color: currentColor;
+                            border-radius: 0 2px 2px 0;
+                        }
+                    }
+
+                    &.has-active-child::before {
+                        display: none;
+                    }
+
+                    &.active {
+
+                        .nav-link {
+                            
+                            a {
+                                color: var(--sidebar-link-active-color);
+                            }
+                        }
+                    }
+                }
+
+                .sidebar-nav-children {
+
+                    .nav-child-item {
+                        position: relative;
+                        padding: 0 0 0 44px;
+                        margin-bottom: 16px;
+
+                        .nav-child-link {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            a {
+                                flex: 1;
+                                color: var(--sidebar-link-color);
+                                text-decoration: none;
+                                font-size: 14px;
+                                opacity: 1;
+                                transition: color 0.2s ease, opacity 2s ease;
+
+                                &:hover {
+                                    color: var(--sidebar-link-hover-color);
+                                }
+                            }
+
+                            .nav-toggle-children {
+                                color: var(--sidebar-icon-color);
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+
+                                .animation {
+                                    transition: transform 0.3s ease;
+                                    transform: rotate(0deg);
+                                }
+
+                                .animation.expanded {
+                                    transform: rotate(-180deg);
+                                }
+                            }
+                        }
+
+                        &.active {
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                left: -24px;
+                                width: 3px;
+                                height: 26px;
+                                transform: translateY(-50%);
+                                background-color: currentColor;
+                                border-radius: 0 2px 2px 0;
+                            }
+
+                            .nav-child-link {
+
+                                a {
+                                    color: var(--sidebar-link-active-color)
+                                }
+                            }
+                        }
+
+                        &.nav-child-level-2.active::before {
+                            left: -68px;
+                        }
+
+                        .sidebar-nav-children {
+                            .nav-child-item {
+                                padding-left: 20px;
+                                margin-top: 12px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sidebar-row-separator {
+                border-color: var(--sidebar-row-separator-color);
+                margin: 12px 24px;
+            }
+        }
+    }
+
+    /* kada je sidebar 'sklopljen' */
+    &.sidebar-minimized {
+        
+        .sidebar-header {
+            .sidebar-header-row {
+                .header-logo {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .sidebar-content {
+            .sidebar-navigation {
+                .sidebar-nav-row {
+                    .sidebar-nav-item {
+
+                        &.has-active-child::before {
+                            display: block;
+                        }
+                        
+                        .nav-link {
+
+                            a {
+                                @extend .sidebar-hidden-class;
+                            }
+                        }
+
+                        .nav-toggle-children {
+                            // display: none;
+                            @extend .sidebar-hidden-class;
+                        }
+
+                        &.selected-module {
+                            .sidebar-module-icon {
+                                transform: translateX(-6px);
+                            }
+
+                            .sidebar-module-title {
+                                @extend .sidebar-hidden-class;
+                            }
+                        }
+                    }
+
+                    .sidebar-nav-children {
+                        
+                        .nav-child-item {
+                            margin: 0;
+
+                            &.active::before {
+                                display: none;
+                            }
+                            
+                            .nav-child-link {
+
+                                a {
+                                    @extend .sidebar-hidden-class;
+                                }
+                            }
+
+                            .nav-toggle-children {
+                                @extend .sidebar-hidden-class;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+/*  < 992px (lg) */
+@include media-breakpoint-down(lg) {
+    .sidebar {
+        position: absolute;
+        transform: translateX(-120%);
+        transition: transform 0.3s ease;
+        background-color: var(--sidebar-bg-darker-color);
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.70);
+
+        &.mobile-sidebar-open {
+            transform: translateX(0%);
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+
+/* zbog ponavljanja koda -> @extend.sidebar-hidden-class */
+.sidebar-hidden-class {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: none;  
+}

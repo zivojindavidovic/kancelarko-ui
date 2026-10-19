@@ -1,0 +1,46 @@
+
+
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --primary-dark: #{$dark-blue};
+
+    /* primary btn */
+    --btn-primary-bg: rgba(#{$blue-rgb}, 0.4);
+    --btn-primary-color: #{$blue};
+    --btn-primary-border-color: var(--btn-primary-bg);
+    --btn-primary-active-bg: var(--primary-dark);
+    --btn-primary-active-border-color: var(--primary-dark);
+    --btn-primary-disabled-bg: rgba(#{$blue-rgb}, 0.4);
+    --btn-primary-disabled-color: #{$blue};
+    --btn-primary-disabled-border-color: var(--primary-dark);
+    --btn-primary-hover-bg: rgba(#{$dark-blue-rgb}, 0.4);
+    --btn-primary-hover-color: #{$dark-blue};
+
+    /* primary outline button */
+    --btn-primary-outline-color: var(--primary);
+    --btn-primary-outline-hover-bg: var(--primary);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --primary-dark: #{$dark-blue};
+    
+    /* primary btn */
+    --btn-primary-bg: rgba(#{$blue-rgb}, 0.4);
+    --btn-primary-color: #{$blue};
+    --btn-primary-border-color: var(--btn-primary-bg);
+    --btn-primary-active-bg: var(--primary-dark);
+    --btn-primary-active-border-color: var(--primary-dark);
+    --btn-primary-disabled-bg: rgba(#{$blue-rgb}, 0.4);
+    --btn-primary-disabled-color: #{$blue};
+    --btn-primary-disabled-border-color: var(--primary);
+    --btn-primary-hover-bg: rgba(#{$dark-blue-rgb}, 0.4);
+    --btn-primary-hover-color: #{$dark-blue};
+    
+    /* primary outline button */
+    --btn-primary-outline-color: rgba(#{$blue-rgb}, 0.4);
+    --btn-primary-outline-hover-bg: rgba(#{$dark-blue-rgb}, 0.4);
+}

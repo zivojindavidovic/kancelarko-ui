@@ -1,0 +1,20 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --main-title-color: #{$gray};
+    --main-section-title-color: #{$gray};
+    --main-section-filter-icon-color: #{$blue};
+    --main-section-bg-color: rgba(232, 232, 232, 0.7);
+    --main-section-bg-darker-color: rgba(232, 232, 232, 0.9);
+    --main-floating-bar-bg-color: #{rgba($white, 0.3)};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --main-title-color: #{$gray-10};
+    --main-section-title-color: #{$gray-10};
+    --main-section-filter-icon-color: #{$blue};
+    --main-section-bg-color: rgba(15, 15, 15, 0.7);
+    --main-section-bg-darker-color: rgba(15, 15, 15, 0.9);
+    --main-floating-bar-bg-color: rgba(#{$gray-rgb}, 0.5);
+}

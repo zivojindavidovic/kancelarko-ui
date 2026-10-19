@@ -1,0 +1,56 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary-border: #{$blue};
+
+    --red-border: #{$red};
+
+    --gray-border: #{$gray};
+
+    --gray-dark-border: #{$gray-dark};
+
+    --gray-10-border: #{$gray-10};
+
+    --gray-30-border: #{$gray-30};
+
+    --gray-50-border: #{$gray-50};
+    --gray-50-50-border: rgba(#{$gray-50-rgb}, 0.5);
+
+    --gray-70-border: #{$gray-70};
+
+    --gray-90-border: #{$gray-90};
+
+    --white-border: #{$white};
+
+    --gray-50-border-opacity-50: rgba(#{$gray-50-rgb}, 0.5);
+
+    --border-divider: #{$gray-30};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --primary-border: #{$blue};
+
+  --red-border: #{$red};
+    
+  --gray-border: #{$gray};
+
+  --gray-dark-border: #{$gray-dark};
+
+  --gray-10-border: #{$gray-10};
+
+  --gray-30-border: #{$gray-30};
+
+  --gray-50-border: #{$gray-50};
+  --gray-50-50-border: rgba(#{$gray-50-rgb}, 0.5);
+
+  --gray-70-border: #{$gray-70};
+
+  --gray-90-border: #{$gray-90};
+
+  --white-border: #{$white};
+
+  --gray-50-border-opacity-50: rgba(#{$gray-50-rgb}, 0.5);
+  
+  --border-divider: #{$gray-90};
+}

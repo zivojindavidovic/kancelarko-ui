@@ -1,0 +1,60 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary-bg: #{$blue-rgb};
+    --primary-bg-40: #{rgba($blue, 0.4)};
+
+    --gray-bg: #{$white};
+    --gray-bg-40: #{rgba($gray, 0.4)};
+
+    --gray-dark-bg: #{$gray-10};
+    --gray-dark-bg-40: #{rgba($gray-dark, 0.4)};
+    --gray-dark-bg-60: #{rgba($gray-10, 0.6)};
+
+    --gray-10-bg: #{$gray-10};
+    --gray-10-bg-40: #{rgba($gray-10, 0.4)};
+
+    --gray-30-bg: #{$gray-30};
+    --gray-30-bg-40: #{rgba($gray-30, 0.4)};
+
+    --gray-50-bg: #{$gray-50};
+    --gray-50-bg-40: #{rgba($gray-50, 0.4)};
+
+    --gray-90-bg: #{$gray-90};
+    --gray-90-bg-40: #{rgba($gray-90, 0.4)};
+
+    --white-bg: #{$white};
+    --white-bg-40: #{rgba($white, 0.4)};
+
+    --red-bg: #{$red};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --primary-bg: #{$blue};
+  --primary-bg-40: #{rgba($blue, 0.4)};
+
+  --gray-bg: #{$gray};
+  --gray-bg-40: #{rgba($gray, 0.4)};
+
+  --gray-dark-bg: #{$gray-dark};
+  --gray-dark-bg-40: #{rgba($gray-dark, 0.4)};
+  --gray-dark-bg-60: #{rgba($gray-dark, 0.6)};
+
+  --gray-10-bg: #{$gray-10};
+  --gray-10-bg-40: #{rgba($gray-10, 0.4)};
+
+  --gray-30-bg: #{$gray-30};
+  --gray-30-bg-40: #{rgba($gray-30, 0.4)};
+
+  --gray-50-bg: #{$gray-50};
+  --gray-50-bg-40: #{rgba($gray-50, 0.4)};
+
+  --gray-90-bg: #{$gray-90};
+  --gray-90-bg-40: #{rgba($gray-90, 0.4)};
+
+  --white-bg: #{$white};
+  --white-bg-40: #{rgba($white, 0.4)};
+
+  --red-bg: #{$red};
+}

@@ -1,0 +1,15 @@
+.filter-panel {
+    padding: 48px;
+    border-radius: 10px;
+    background: var(--filter-bg);
+    color: var(--filter-text-color);
+    
+    /*  */
+    .b-dp-chip {
+        background-color: var(--filter-date-input-bg-color) !important;
+    }
+
+    // .filter-buttons{
+    //     margin-left: 75px;
+    // }
+}

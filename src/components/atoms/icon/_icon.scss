@@ -1,0 +1,125 @@
+.icon-xl svg {
+    width: 92px;
+    height: 66px;
+    display: block;
+}
+
+.icon-lg svg {
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
+.icon-md svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.icon-sm svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+
+.icon-sm, .icon-md, .icon-lg { 
+  display: inline-flex; 
+  line-height: 0; 
+}
+
+.icon-event svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+
+.yellow-icon {
+    color: $yellow;
+}
+.violet-icon {
+    color: $violet;
+}
+.light-violet-icon {
+    color: $light-violet;
+}
+.lilac-icon {
+    color: $lilac;
+}
+.light-blue-icon {
+    color: $light-blue;
+}
+.pink-icon {
+    color: $pink;
+}
+.cherry-red-icon {
+    color: $cherry-red;
+}
+.green-icon {
+    color: $green;
+}
+.kiwi-icon {
+    color: $kiwi-green;
+}
+.mint-icon {
+    color: $mint;
+}
+.orange-icon {
+    color: $orange;
+}
+.peach-icon {
+    color: $peach;
+}
+
+.blue-icon {
+    color: $blue;
+}
+
+.flag-blue-icon {
+    color: $blue;
+}
+
+.dark-blue-icon {
+    color: $dark-blue;
+}
+
+.red-icon {
+    color: $red;
+}
+
+.flag-red-icon {
+    color: $red;
+}
+
+.flag-green-icon {
+    color: $green;
+}
+
+.gray-10-icon {
+    color: $gray-10;
+}
+
+.gray-30-icon {
+    color: $gray-30;
+}
+
+.gray-50-icon {
+    color: $gray-50;
+}
+
+.gray-70-icon {
+    color: $gray-70;
+}
+
+.gray-90-icon {
+    color: $gray-90;
+}
+
+.icon-hover:hover {
+    opacity: 50%;
+}
+
+.clickable-icon {
+    cursor: pointer;
+}

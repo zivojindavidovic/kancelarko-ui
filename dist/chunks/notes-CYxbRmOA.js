@@ -1,0 +1,6 @@
+//#region src/icons/notes.svg?raw
+var e = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_2926_90597)\">\n    <path d=\"M9.70842 11.6999L13.7245 7.68385C13.881 7.52737 13.881 7.27366 13.7245 7.11718L12.7758 6.16854C12.6194 6.01206 12.3657 6.01206 12.2092 6.16854L8.19312 10.1846C8.14052 10.2372 8.1036 10.3034 8.08649 10.3758L7.79306 11.6179C7.72457 11.9078 7.9852 12.1685 8.27515 12.1L9.51721 11.8065C9.58961 11.7894 9.65582 11.7525 9.70842 11.6999Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M3.5 6H8.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M3.5 9.44604H5.56808\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M11 4.53727C11 3.13598 9.86402 2 8.46273 2H4C2.34315 2 1 3.34315 1 5V12C1 13.6569 2.34315 15 4 15H9.5C10.3284 15 11 14.3284 11 13.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n  </g>\n  <defs>\n    <clipPath id=\"clip0_2926_90597\">\n      <rect width=\"16\" height=\"16\" fill=\"currentColor\"/>\n    </clipPath>\n  </defs>\n</svg>";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=notes-CYxbRmOA.js.map

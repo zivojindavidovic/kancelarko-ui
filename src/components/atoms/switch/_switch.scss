@@ -1,0 +1,27 @@
+/* SWITCH */
+.form-check {
+    &.form-switch {
+
+        .form-check-input {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+            --bs-form-check-bg: var(--input-switch-bg-color); /* pozadina - kada nije check */
+            border-color: var(--input-switch-border-color);
+            width: 32px;
+            height: 20px;
+
+            &:checked {
+                background-color: var(--input-switch-bg-checked-color);
+                border-color: var(--input-switch-border-checked-color);
+            }
+
+            &:focus {
+                box-shadow: none;
+                --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+            }
+        }
+
+        .form-check-label {
+            @extend .b-labels;
+        }
+    }
+}

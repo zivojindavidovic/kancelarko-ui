@@ -1,0 +1,6 @@
+//#region src/icons/birthday.svg?raw
+var e = "<svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" stroke=\"currentColor\">\n  <g clip-path=\"url(#clip0_3_167)\">\n    <path d=\"M7.99999 4.47909C7.99999 5.44559 5.74799 5.06242 4.88888 5.06242C4.02977 5.06242 3.33333 4.27892 3.33333 3.31242C3.33333 2.34593 4.02977 1.56242 4.88888 1.56242C6.24999 1.56242 7.99999 3.51259 7.99999 4.47909Z\" stroke-width=\"1.4\"/>\n    <path d=\"M8.00001 4.47909C8.00001 5.44559 10.252 5.06242 11.1111 5.06242C11.9702 5.06242 12.6667 4.27892 12.6667 3.31242C12.6667 2.34593 11.9702 1.56242 11.1111 1.56242C9.75001 1.56242 8.00001 3.51259 8.00001 4.47909Z\" stroke-width=\"1.4\"/>\n    <rect x=\"1.7\" y=\"5.19992\" width=\"12.6\" height=\"10.2667\" rx=\"2.3\" stroke-width=\"1.4\"/>\n    <path d=\"M8 5.6665L8 14.9998\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M2.1875 10.3333L14 10.3332\" stroke-width=\"1.4\" stroke-linecap=\"square\"/>\n  </g>\n  <defs>\n    <clipPath id=\"clip0_3_167\">\n      <rect width=\"16\" height=\"16\" fill=\"currentColor\"/>\n    </clipPath>\n  </defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=birthday-BDFOqtxN.js.map

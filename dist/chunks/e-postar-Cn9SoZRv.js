@@ -1,0 +1,6 @@
+//#region src/icons/module-icons/e-postar.svg?raw
+var e = "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle opacity=\"0.3\" cx=\"18\" cy=\"18\" r=\"18\" fill=\"#049BE5\"/>\n<path d=\"M26.3333 19.6364V23.5C26.3333 25.341 24.8409 26.8333 23 26.8333H13C11.159 26.8333 9.66666 25.3409 9.66666 23.5V15.7727C9.66666 13.9318 11.159 12.4394 13 12.4394H18\" stroke=\"#049BE5\" stroke-width=\"1.06061\" stroke-linecap=\"round\"/>\n<path d=\"M10.0454 15.0909L15.8585 20.6272C17.0496 21.7615 18.9281 21.7386 20.0911 20.5756L20.6515 20.0152\" stroke=\"#049BE5\" stroke-width=\"1.06061\" stroke-linecap=\"round\"/>\n<path d=\"M21.0305 10.697H25.5754C25.701 10.697 25.803 10.799 25.803 10.9245V16.9626C25.8027 17.1339 25.6202 17.2433 25.469 17.1628L23.9397 16.3454C23.533 16.128 23.0408 16.1439 22.6497 16.3884L21.1506 17.3259C20.9994 17.4204 20.8032 17.3118 20.803 17.1335V10.9245C20.803 10.799 20.905 10.697 21.0305 10.697Z\" stroke=\"#049BE5\" stroke-width=\"1.06061\"/>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=e-postar-Cn9SoZRv.js.map

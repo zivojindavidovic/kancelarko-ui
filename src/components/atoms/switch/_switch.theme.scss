@@ -1,0 +1,22 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+
+    --input-switch-bg-color: #{$gray-50};
+    --input-switch-bg-checked-color: var(--primary);
+    --input-switch-border-color: var(--primary);
+    --input-switch-border-checked-color: var(--primary);
+
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+
+    
+
+    --input-switch-bg-color: #{$gray-50};
+    --input-switch-bg-checked-color: var(--primary);
+    --input-switch-border-color: #{$gray-50};
+    --input-switch-border-checked-color: var(--primary);
+
+}

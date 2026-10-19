@@ -1,0 +1,6 @@
+//#region src/icons/close.svg?raw
+var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_3_149)\"><path d=\"M4.00001 19.9999L20 3.99992\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M20 19.9999L4.00003 3.99992\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></g><defs><clipPath id=\"clip0_3_149\"><rect width=\"24\" height=\"24\" fill=\"white\"/></clipPath></defs></svg>";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=close-B7tb6BJf.js.map

@@ -1,0 +1,6 @@
+//#region src/icons/calendar.svg?raw
+var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.40039 4.35019H18.5996C20.6431 4.35019 22.2998 6.00693 22.2998 8.05038V19.6002C22.2997 21.6436 20.643 23.3004 18.5996 23.3004H5.40039C3.357 23.3004 1.7003 21.6436 1.7002 19.6002V8.05038C1.7002 6.00693 3.35694 4.35019 5.40039 4.35019Z\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M2.1 9.7H21.9\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M8 2V6\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M16 2V6\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><rect x=\"6.5\" y=\"13\" width=\"2.2\" height=\"2.2\" rx=\"0.88\" fill=\"currentColor\"/><rect x=\"6.5\" y=\"17.4\" width=\"2.2\" height=\"2.2\" rx=\"0.88\" fill=\"currentColor\"/><rect x=\"10.9\" y=\"13\" width=\"2.2\" height=\"2.2\" rx=\"0.88\" fill=\"currentColor\"/><rect x=\"10.9\" y=\"17.4\" width=\"2.2\" height=\"2.2\" rx=\"0.88\" fill=\"currentColor\"/><rect x=\"15.3\" y=\"13\" width=\"2.2\" height=\"2.2\" rx=\"0.88\" fill=\"currentColor\"/><rect x=\"15.3\" y=\"17.4\" width=\"2.2\" height=\"2.2\" rx=\"0.88\" fill=\"currentColor\"/></svg>";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=calendar-RUHw38Zx.js.map

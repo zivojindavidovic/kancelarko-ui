@@ -1,0 +1,89 @@
+.btn {
+    padding: 12px 32px;
+    font-size: 18px;
+    line-height: 22px; /* 121.429% */
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    
+
+    &.btn-sm {
+        padding: 8px 24px;
+        font-size: 14px;
+        line-height: 17px; /* 121.429% */
+    }
+
+    &.btn-circle {
+        border-radius: 100%;
+        padding: 0px;
+
+        &.btn-sm {
+
+            svg {
+                margin: 4px;
+            }
+        }
+
+        &.btn-wh-70 {            
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    /* dugme koje se koristi u swall-u (alert) */
+    &.alert-button {
+        width: 110px !important;
+    }
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--btn-primary-bg);
+    --bs-btn-border-color: var(--btn-primary-bg);
+    color: var(--btn-primary-color);
+    border-color: transparent;
+    
+
+    &:hover {
+        --bs-btn-hover-bg: var(--btn-primary-hover-bg);
+        --bs-btn-hover-border-color: var(--btn-primary-hover-bg);
+        color: var(--btn-primary-hover-color);
+    }
+
+    &:active {
+        --bs-btn-active-bg: var(--btn-primary-hover-bg);
+        --bs-btn-active-border-color: var(--btn-primary-hover-bg);
+        color: var(--btn-primary-hover-color);
+    }
+
+    &:disabled {
+        --bs-btn-disabled-color: var(--btn-primary-disabled-color);
+        --bs-btn-disabled-bg: var(--btn-primary-disabled-bg);
+        --bs-btn-disabled-border-color: var(--btn-primary-disabled-border-color);
+        border: none;
+    }
+}
+
+
+.btn-outline-primary {
+    --bs-btn-color: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    color: var(--primary);
+
+    &:hover {
+        --bs-btn-hover-bg: transparent;
+        --bs-btn-hover-border-color: var(--btn-primary-border-color);
+        color: var(--btn-primary-hover-color);
+    }
+
+    &:active {
+        --bs-btn-active-bg: var(--btn-primary-active-bg);
+        --bs-btn-active-border-color: var(--btn-primary-active-border-color);
+    }
+
+    &:disabled {
+        --bs-btn-disabled-color: var(--btn-primary-disabled-color);
+        --bs-btn-disabled-border-color: var(--btn-primary-disabled-border-color);
+        opacity: 0.5
+    }
+}

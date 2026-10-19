@@ -1,0 +1,18 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --modal-background: #{$white};
+    --modal-text-color: #{$gray};
+    --modal-muted-text-color: #{$gray-50};
+    --modal-border-color: rgba(#{$gray-50-rgb}, 0.50);
+    --modal-close-icon-color: #{$gray-50};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --modal-background: #{$gray};
+    --modal-text-color: #{$gray-10};
+    --modal-muted-text-color: #{$gray-50};
+    --modal-border-color: rgba(#{$gray-50-rgb}, 0.50);
+    --modal-close-icon-color: #{$gray-50};
+}

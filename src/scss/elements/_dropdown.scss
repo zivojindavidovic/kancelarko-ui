@@ -1,0 +1,126 @@
+//obican dorp down (ex: na dugmetu)::custom
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &__trigger {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    &__icon {
+        transition: transform 0.3s ease;
+    }
+
+    &:focus-within &__icon {
+        transform: rotate(-180deg);
+    }
+
+    &__menu {
+        display: none;
+        position: absolute;
+        top: 120%;
+        right: 0;
+
+        background: var(--dropdown-menu-bg);
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.30);
+        border-radius: 10px;
+
+        padding: 12px 0;
+        min-width: max-content;
+        z-index: 10;
+
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* open state */
+    &:focus-within &__menu {
+        display: flex;
+    }
+
+    &__item {
+        @extend .b-small-font;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        width: 100%;
+        padding: 12px 16px;
+
+        background: transparent;
+        border: none;
+        text-align: left;
+
+        color: var(--dropdown-item-text-color);
+        transition: background 0.1s ease, color 0.3s ease;
+
+        &:hover,
+        &:focus {
+            background: var(--dropdown-item-active-bg);
+            color: var(--dropdown-item-active-text-color);
+            outline: none;
+        }
+
+        svg {
+            transition: color 0.3s ease;
+        }
+
+        &:hover svg,
+        &:focus svg {
+            color: var(--primary);
+        }
+    }
+
+    /* modifiers */
+    &--right {
+        .dropdown__menu {
+            left: 100%;
+            right: auto;
+        }
+    }
+
+    &--bottom {
+        .dropdown__menu {
+            top: 120%;
+            right: 0;
+        }
+    }
+}
+
+
+//dropdown context menu (ex: datatabele, orv opcije...)::bootrsap
+
+.dropdown-menu {
+    background: var(--dropdown-menu-bg);
+    padding: 12px 0px;
+    border-radius: 10px;
+
+    .dropdown-item {
+        color: var(--dropdown-item-text-color);
+        background: var(--dropdown-menu-bg);
+        padding: 12px 16px;
+        @extend .b-small-font;
+        transition: color 0.1s ease, background 0.1s ease;
+
+        &:hover {
+            color: var(--dropdown-item-active-text-color);
+            background: var(--dropdown-item-active-bg);
+            transition: color 0.3s ease, background 0.3s ease;
+
+            .menu-icon {
+                color: var(--primary);
+            }
+        }
+
+        .menu-icon {
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --scroll-color-thumb: #{$blue};
+    --scroll-color-track: rgba(#{$gray-rgb}, 0.1);
+    --scroll-color-mix: var(--scroll-color-thumb) var(--scroll-color-track);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --scroll-color-thumb: #{$blue};
+    --scroll-color-track: rgba(#{$gray-rgb}, 0.1);
+    --scroll-color-mix: var(--scroll-color-thumb) var(--scroll-color-track);
+}

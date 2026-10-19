@@ -1,0 +1,20 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --app-file-upload-background-color: #{$gray-10};
+    --app-file-upload-title-color: #{$gray};
+    --app-file-upload-border-color: #{$blue};
+    --app-file-upload-text-color: #{$gray-50};
+    --app-file-upload-progress-color: #{$blue};
+    --app-file-upload-list-border-color: #{$gray-30};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --app-file-upload-background-color: #{$gray-dark};
+    --app-file-upload-title-color: #{$gray-10};
+    --app-file-upload-border-color: #{$blue};
+    --app-file-upload-text-color: #{$gray-50};
+    --app-file-upload-progress-color: #{$blue};
+    --app-file-upload-list-border-color: #{$gray-90};
+}

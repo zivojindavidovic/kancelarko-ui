@@ -1,0 +1,22 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+
+    --input-cb-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --input-cb-border-active-color: var(--primary);
+    --input-cb-bg-color: #{$gray-10};
+    --input-cb-icon-color: var(--primary);
+
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+
+    
+
+    --input-cb-border-color: var(--input-border-color);
+    --input-cb-border-active-color: var(--primary);
+    --input-cb-bg-color: #{$gray-dark};
+    --input-cb-icon-color: var(--primary);
+
+}

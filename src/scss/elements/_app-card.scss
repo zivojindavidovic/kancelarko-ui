@@ -1,0 +1,276 @@
+.app-card {
+    display: flex;
+    flex-direction: column;
+
+    &.app-card-hover {
+        position: relative;
+        z-index: 0;
+
+        .app-card-box {
+            outline: 1px solid transparent;
+            transition: transform 160ms ease, outline-color 160ms ease;
+        }
+
+        &:hover {
+            z-index: 1;
+
+            .app-card-box {
+                outline-color: var(--primary, #049BE5);
+                transform: scale(1.02);
+            }
+        }
+    }
+    
+    .app-card-box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        padding: 24px;
+
+        border-radius: 10px; 
+
+        &.app-card-box-custom-bg {
+        }
+
+        &.app-card-box-gray-bg-opacity-60 {
+            background-color: var(--app-card-gray-background-color-opacity-60);
+        }
+
+        &:not(.app-card-box-custom-bg) {
+            background: var(--app-card-background-color);
+        }
+
+        &.app-card-box-padding-16 {
+            padding: 16px;
+        }
+        
+        .app-card-header {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 100%;
+            gap: 8px;
+
+            .app-card-title {
+                margin: 0;
+            }
+
+            .app-card-toggle {
+                margin-left: auto;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+
+            &.app-card-header-divider {
+                border-bottom: 0.5px solid var(--app-card-divider-border-color);
+            }
+
+            &.app-card-header-inline {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 16px;
+                padding-bottom: 16px;
+            }
+            
+            &.p-16{
+                padding: 16px 0;
+            }
+        }
+
+        .app-card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+
+            .app-card-row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                
+                padding: 8px 0px;
+
+                &.app-card-row-gap-12 {
+                    gap: 12px;
+                }
+
+                &.app-card-row-gap-16 {
+                    gap: 16px;
+                }
+
+                &.p-16{
+                    padding: 16px 0;
+                }
+
+                &.m-36{
+                    margin: 36px 0;
+                }
+
+                .image-preview {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: fill;
+                    border-radius: 10px;
+                    // border: 1px solid #ddd;
+                    flex-shrink: 0;
+                }
+            }
+
+            .app-card-row-divider {
+                border-bottom: 0.5px solid var(--app-card-border-color);
+            }
+
+            .app-card-row-tight {
+                gap: 6px;
+                padding: 0;
+            }
+
+            .app-card-row-left {
+                flex: 1 1 auto;
+                min-width: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .app-card-row-right {
+                margin-left: auto;
+                flex: 0 0 auto;
+                padding-left: 24px;
+
+                &.row-right-full {
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+
+            // When document and edit/delete controls are rendered as separate
+            // columns, keep the same 16px rhythm between each action group.
+            .app-card-row > .row > .col-auto + .col-auto {
+                margin-left: 16px;
+            }
+
+            .app-card-value {
+                min-width: 0;
+
+                .app-card-value-ellipsis {
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+            }
+
+            .app-card-action {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .app-card-plain-row {
+                display: flex;
+                width: 100%;
+            }
+
+            &.g-0{
+                gap: 0px;
+            }
+
+            &.g-16{
+                gap: 16px;
+            }
+
+            .app-card-text-gray-50 {
+                color: var(--Gray-Gray-50, #8C8C8C);
+            }
+
+            
+            .theme-selector {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 16px;
+                padding-left: 3;
+            }
+
+            .theme-option {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 8px;
+                padding: 0;
+                border: 0;
+                color: inherit;
+                background: transparent;
+                cursor: pointer;
+
+                .icon-xl,
+                .icon-xl svg {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .theme-selection-border {
+                    stroke: transparent;
+                }
+
+                &.active .theme-selection-border {
+                    stroke: var(--primary, #049BE5);
+                }
+
+                &:focus-visible {
+                    outline: 2px solid var(--primary, #049BE5);
+                    outline-offset: 3px;
+                    border-radius: 9px;
+                }
+
+                &:disabled {
+                    cursor: wait;
+                    opacity: 0.65;
+                }
+            }
+        }
+        
+        .app-card-footer {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            gap: 12px;
+        }
+
+        &.app-card-input{
+            gap: 27px;
+        }
+    }
+    
+    .app-card-box-multicontent {
+        flex-direction: row;
+        align-items: center;
+        
+        .app-card-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-right: 16px;
+        }
+
+        .app-card-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .app-card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            
+        }
+    }
+
+}

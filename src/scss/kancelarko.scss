@@ -1,0 +1,44 @@
+/*
+ * Kancelarko UI - tema, layout, komponente i utility klase (bez Bootstrap-a).
+ * Zahteva da su Bootstrap funkcije/mixini/varijable vec ucitani (vidi app.scss).
+ *
+ * Tema: data-theme="dark" | "light" na <html>, <body> ili bilo kom wrapperu (dark je default).
+ * Pozadinska slika body-ja po temi: --body-background-image.
+ */
+
+/* custom scss */
+@import './vars/all';
+@import './fonts/all';
+@import './themes';        // CSS varijable (globalne + pored komponenti)
+@import './utilities/all';
+@import './components';    // stilovi: layout, elementi, komponente
+
+:root[data-theme="light"],
+[data-theme="light"] {
+    --body-background-image: url('../images/kancelarko-bg-light.png?no-inline');
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --body-background-image: url('../images/kancelarko-bg-dark.webp?no-inline');
+}
+
+body {
+    font-family: Roboto;
+    background: var(--body-bg) var(--body-background-image);
+    background-size: cover;
+    background-position: center;
+    padding: 15px 15px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* sitne pomocne klase */
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-not-allowed {
+    cursor: not-allowed !important;
+}

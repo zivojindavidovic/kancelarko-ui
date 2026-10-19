@@ -1,0 +1,178 @@
+// TREE
+.tree-container {
+
+    background-color: var(--tree-background-color);
+    border-radius: 10px;
+    padding: 16px;
+
+    &.tree-transparent-content {
+        .tree-content {
+            background-color: transparent;
+        }
+    }
+
+    &.tree-locked {
+        .tree-content {
+            pointer-events: none;
+        }
+    }
+
+    &.has-error {
+        .tree-content {
+            border-color: var(--error-color);
+        }
+    }
+
+    /* Tree Content Scrollbar */
+    .tree-content {
+        max-height: 400px;
+        border-radius: 10px;
+        border: 1px solid var(--tree-content-border-color);
+        background-color: var(--tree-background-color);
+
+        /* Tree-node */
+        .tree-node {
+
+            .node-row {
+                gap: 12px;
+                border-radius: 6px;
+                transition: all 0.2s ease;
+                cursor: pointer;
+                padding: 4px 0;
+
+                &:hover {
+                    background-color: var(--tree-node-hover-background-color);
+                }
+
+                &.highlighted {
+                    background-color: var(--tree-node-highlight-background-color) !important;
+                    border-left: 3px solid var(--tree-node-highlight-border-color);
+                    padding-left: calc(12px - 3px);
+                }
+            }
+
+            /* Expand/Collapse Button */
+            .btn-expand {
+                width: 20px;
+                height: 20px;
+                color: var(--tree-expand-icon-color);
+
+                svg {
+                    transition: transform 0.2s ease;
+                }
+
+                span {
+                    transition: transform 0.2s ease;
+                    
+                    &.rotate {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                &.checked {
+                    color: var(--tree-expand-icon-color-checked);
+                }
+
+                &:hover {
+                    color: var(--tree-expand-icon-hover-color);
+                }
+            }
+
+            /* placeholder za nodove bez dece - umesto expand dugmeta imitira prazninu */
+            .node-placeholder {
+                width: 20px;
+                height: 20px;
+            }
+
+            /* Checkbox - prilagođeno za AppCheckbox */
+            .form-check {
+                display: contents;
+
+                .form-check-input.custom-checkbox {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0;
+                    border-radius: 5.33px;
+                    background-color: var(--tree-checkbox-background-color);
+                    border-color: var(--tree-checkbox-border-color);
+                    cursor: pointer;
+
+                    &::after {
+                        --input-cb-icon: url('../../../icons/checkmark.svg');
+                        width: 10px;
+                        height: 10px;
+                        background-color: var(--tree-checkbox-checkmark-color);
+                    }
+
+                    &:checked {
+                        border-color: var(--tree-checkbox-checked-border-color);
+                    }
+
+                    &:disabled {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                        border-color: var(--tree-checkbox-disabled-border-color);
+                        background-color: var(--tree-checkbox-disabled-background-color);
+                    }
+                }
+                
+                // skriva labelu ako postoji (pošto TreeNode već ima svoju labelu)
+                .form-check-label {
+                    display: none;
+                }
+            }
+
+            .node-content {
+
+                /* Icon */
+                .node-icon {
+                    width: 16px;
+                    height: 16px;
+                    color: var(--tree-icon-color);
+
+                    &.checked {
+                        color: var(--tree-icon-color-checked);
+                    }
+                }
+
+
+                /* Label */
+                .node-label {
+                    color: var(--tree-label-color);
+                    font-size: 14px;
+                    line-height: 20px;
+                    @extend .b-small-font;
+                    flex-grow: 1;
+
+                    &.checked {
+                        color: var(--tree-label-color-checked);
+                    }
+                }
+            }
+
+            /* Children Container */
+            .tree-children {
+                padding-left: 28px;
+
+                /* poslednje dete u tree-children treba da ima 24px razmaka od sledećeg roditelja (a tree-children ima gap 16px) */
+                &:last-child {
+                    margin-bottom: 8px; /* 24px - 16px = 8px dodatnog razmaka */
+                }
+
+                &.no-transition {
+                    .expand-enter-active,
+                    .expand-leave-active {
+                        transition: none !important;
+                    }
+                }
+
+                .expand-enter-from,
+                .expand-leave-to {
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

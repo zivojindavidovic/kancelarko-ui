@@ -1,0 +1,36 @@
+/* GENERISANO: CSS varijable tema, redosled ucitavanja. Globalne su u ./themes/, komponentne pored komponente (_x.theme.scss). */
+@import './vars/colors';
+
+@import './themes/general';
+@import './themes/pills';
+@import './themes/modal';
+@import './themes/buttons';
+@import '../components/atoms/text-input/_text-input.theme';
+@import '../components/atoms/checkbox/_checkbox.theme';
+@import '../components/atoms/switch/_switch.theme';
+@import '../components/composites/sidebar/_sidebar.theme';
+@import '../components/composites/header/_header.theme';
+@import '../components/composites/page/_main.theme';
+@import '../components/composites/header/_header-modal.theme';
+@import './themes/scrollbar';
+@import './themes/typography';
+@import '../plugins/toast/_toast.theme';
+@import '../components/atoms/tooltip/_tooltip.theme';
+@import '../components/atoms/date-picker/_date-picker.theme';
+@import '../plugins/alert/_alert.theme';
+@import '../components/atoms/select/_select.theme';
+@import '../components/composites/calendar/_calendar.theme';
+@import '../components/composites/tree/_tree.theme';
+@import '../components/composites/datatable/_datatable.theme';
+@import '../components/composites/filters/_filter-panel.theme';
+@import '../components/composites/filters/_filter-preview.theme';
+@import './themes/nav_tabs';
+@import './themes/table';
+@import '../components/composites/employee/_employee-info-card.theme';
+@import './themes/app-card';
+@import '../components/atoms/avatar/_avatar.theme';
+@import './themes/backgrounds';
+@import './themes/borders';
+@import './themes/dropdown';
+@import '../components/composites/upload/_file-upload.theme';
+@import '../components/atoms/text-editor/_text-editor.theme';

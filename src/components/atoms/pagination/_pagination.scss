@@ -1,0 +1,87 @@
+.app-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        min-width: 22px;
+        height: 22px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+        box-shadow: none;
+        color: var(--dt-pagination-text-color);
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        transition: color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+
+        &.current {
+            background: var(--dt-pagination-active-bg);
+            color: var(--dt-pagination-active-text-color);
+        }
+
+        &:hover:not(.current):not(:disabled) {
+            color: var(--dt-pagination-active-text-color);
+        }
+
+        &:disabled {
+            opacity: var(--dt-pagination-disabled-opacity);
+            cursor: default;
+        }
+
+        &--previous,
+        &--next {
+            color: transparent;
+            font-size: 0;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-left: 1.5px solid var(--dt-pagination-arrow-color);
+                border-bottom: 1.5px solid var(--dt-pagination-arrow-color);
+                transition: border-color 0.2s ease;
+            }
+
+            &:hover:not(:disabled)::after {
+                border-color: var(--dt-pagination-active-text-color);
+            }
+        }
+
+        &--previous::after {
+            transform: rotate(45deg);
+            margin-left: 2px;
+        }
+
+        &--next::after {
+            transform: rotate(225deg);
+            margin-right: 2px;
+        }
+    }
+
+    &__ellipsis {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 22px;
+        height: 22px;
+        color: var(--dt-pagination-text-color);
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 1;
+    }
+}

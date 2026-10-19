@@ -1,0 +1,26 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --filter-preview-bg: #{$gray-10};
+    --filter-title: #{$gray};
+    --filter-icon-color: #{$gray-50};
+    --filter-item-title: #{$gray-90};
+    --filter-item-border-bottom: rgba(#{$gray-50-rgb}, 0.50);
+    --filter-value-color: #{$gray-50};
+    --filter-value-bg: #{$white};
+    --filter-value-hover-color: rgba(#{$blue-rgb}, 0.30);
+    --filter-link-hover-color: #{$dark-blue};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --filter-preview-bg: #{$gray-dark};
+    --filter-title: #{$gray-10};
+    --filter-icon-color: #{$gray-50};
+    --filter-item-title: #{$gray-30};
+    --filter-item-border-bottom: rgba(#{$gray-50-rgb}, 0.50);
+    --filter-value-color: #{$gray-50};
+    --filter-value-bg: #{$gray};
+    --filter-value-hover-color: rgba(#{$blue-rgb}, 0.30);
+    --filter-link-hover-color: #{$dark-blue};
+}

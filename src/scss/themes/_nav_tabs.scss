@@ -1,0 +1,16 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --primary-text-color: #{$gray};
+    --muted-color: #{$gray-50};
+    --normal-text-color: #{$gray};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --primary-text-color: #{$gray-10};
+    --muted-color: #{$gray-50};
+    --normal-text-color: #{$gray-10};
+}

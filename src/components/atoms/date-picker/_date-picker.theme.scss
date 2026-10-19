@@ -1,0 +1,87 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --dp-lighter-bg: #{$white};
+    --dp-dark-bg: #{$gray-10};
+
+    --dp-background: var(--dp-lighter-bg);
+
+    --dp-month-year-text-color: #{$gray};
+    --dp-header-text-color: #{$gray-50};
+    --dp-date-color: #{$gray};
+    --dp-weekend-date-color: #{$gray-50};
+    --dp-date-selected-color: rgba(#{$blue-rgb}, 0.3);
+    --dp-date-disabled-color: #{$gray-50};
+    --dp-date-hover-bg-color: rgba(#{$blue-rgb}, 0.5);
+
+    --dp-input-bg-color: var(--dp-dark-bg);
+    --dp-input-border-color: var(--input-border-color);
+    --dp-input-text-color: #{$gray};
+    --dp-input-active-text-color: var(--primary);
+    --dp-input-active-border-color: var(--primary);
+    --dp-input-placeholder-color: #{$gray-50};
+
+    --dp-action-btn-border-color: #2D2D2D;
+    --dp-action-btn-secondary-color: #{$gray-50};
+
+    --dp-action-btn-icon-color: #{$blue};
+    --dp-action-btn-icon-hover-color: #{$dark-blue};
+    --dp-action-btn-bg-color: rgba(#{$blue-rgb}, 0.4);
+    --dp-action-btn-bg-hover-color: rgba(#{$dark-blue-rgb}, 0.4);
+
+    --dp-time-btn-border-color: #{$gray-30};
+    --dp-time-btn-bg-color: var(--dp-dark-bg);
+
+    --dp-time-picker-navigation-hover-bg-color: rgba(#{$gray-rgb}, 0.1);
+
+    --dp-cell-disabled-bg: #{$gray-10};
+    
+    --dp-error-input: #{$red};
+
+    // AppDatePicker uses the vendor dark theme by default, so soften its scrollbar in the app light theme.
+    .dp__menu {
+        --dp-scroll-bar-background: rgba(#{$gray-rgb}, 0.05);
+        --dp-scroll-bar-color: rgba(#{$gray-rgb}, 0.25);
+    }
+}
+
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --dp-lighter-bg: #{$gray};
+    --dp-dark-bg: #{$gray-dark};
+
+    --dp-background: var(--dp-lighter-bg);
+
+    --dp-month-year-text-color: #{$gray-10};
+    --dp-header-text-color: #{$gray-50};
+    --dp-date-color: #{$gray-10};
+    --dp-weekend-date-color: #{$gray-50};
+    --dp-date-selected-color: rgba(#{$blue-rgb}, 0.3);
+    --dp-date-disabled-color: #{$gray-50};
+    --dp-date-hover-bg-color: rgba(#{$blue-rgb}, 0.5);
+
+    --dp-input-bg-color: var(--dp-dark-bg);
+    --dp-input-border-color: var(--input-border-color);
+    --dp-input-text-color: #{$gray-10};
+    --dp-input-active-text-color: var(--primary);
+    --dp-input-active-border-color: var(--primary);
+    --dp-input-placeholder-color: #{$gray-50};
+
+    --dp-action-btn-border-color: rgba(#{$blue-rgb}, 0.4);
+    --dp-action-btn-secondary-color: #{$gray-50};
+
+    --dp-action-btn-icon-color: #{$blue};
+    --dp-action-btn-icon-hover-color: #{$dark-blue};
+    --dp-action-btn-bg-color: rgba(#{$blue-rgb}, 0.4);
+    --dp-action-btn-bg-hover-color: rgba(#{$dark-blue-rgb}, 0.4);
+
+    --dp-time-btn-border-color: #{$gray-90};
+    --dp-time-btn-bg-color: var(--dp-dark-bg);;
+
+    --dp-cell-disabled-bg: #{$gray-dark};
+
+    --dp-error-input: #{$red};
+}

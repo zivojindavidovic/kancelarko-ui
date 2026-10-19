@@ -1,0 +1,6 @@
+//#region src/icons/reapproval.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_2850_7200)\">\n<path d=\"M2.2265 4.66658C3.0352 3.26588 4.32552 2.20694 5.85708 1.68705C7.38863 1.16716 9.05695 1.22178 10.5512 1.84072C12.0455 2.45967 13.2638 3.60073 13.9792 5.05132C14.6945 6.50191 14.8581 8.16309 14.4395 9.72537C14.0209 11.2876 13.0486 12.6445 11.7038 13.543C10.359 14.4416 8.73338 14.8206 7.12983 14.6095C5.52628 14.3984 4.05416 13.6116 2.98774 12.3955C2.03168 11.3054 1.46016 9.93692 1.35211 8.49994\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M1.49431 2.89886L1.49431 4.92311C1.49431 5.14402 1.6734 5.32311 1.89431 5.32311L3.91856 5.32311\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M5 8.16214L7.15024 10.3899C7.45169 10.7022 7.96522 10.6533 8.20234 10.2897L11 6\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_2850_7200\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=reapproval-CMQtqjTA.js.map

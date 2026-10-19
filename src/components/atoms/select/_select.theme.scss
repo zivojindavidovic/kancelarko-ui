@@ -1,0 +1,45 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --error-color: #{$red};
+
+    --app-select-lighter-bg: #{$white};
+    --app-select-dark-bg: #{$gray-10};
+
+    --app-select-background: var(--app-select-dark-bg);
+    --app-select-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --app-select-border-active-color: var(--primary);
+    --app-select-font-color: #{$gray};
+    --app-select-font-muted-color: #{$gray-50};
+    --app-select-clear-icon-color: var(--primary);
+    --app-select-is-pointed-bg: rgba(#{$blue-rgb}, 0.4);
+    --app-select-is-selected-bg: rgba(#{$blue-rgb}, 0.1);
+    --app-select-caret-color: var(--primary);
+    --app-select-tag-bg: #{$white};
+    --app-select-close-icon-color: #{$gray-50};
+    --app-select-avatar-bg: rgba(#{$blue-rgb}, 0.4);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --error-color: #{$red};
+
+    --app-select-lighter-bg: #{$gray};
+    --app-select-dark-bg: #{$gray-dark};
+
+    --app-select-background: var(--app-select-dark-bg);
+    --app-select-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --app-select-border-active-color: var(--primary);
+    --app-select-font-color: #{$gray-10};
+    --app-select-font-muted-color: #{$gray-50};
+    --app-select-clear-icon-color: var(--primary);
+    --app-select-is-pointed-bg: rgba(#{$blue-rgb}, 0.4);
+    --app-select-is-selected-bg: rgba(#{$blue-rgb}, 0.1);
+    --app-select-caret-color: var(--primary);
+    --app-select-tag-bg: #{$gray};
+    --app-select-close-icon-color: #{$gray-50};
+    --app-select-avatar-bg: rgba(#{$blue-rgb}, 0.4);
+    
+}

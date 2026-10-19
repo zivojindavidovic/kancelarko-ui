@@ -1,0 +1,18 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --muted-text-color: #{$gray-50};
+    --normal-text-color: #{$gray};
+    --red-text-color: #{$red};
+    --error-text-color: #{$red};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --muted-text-color: #{$gray-50};
+    --normal-text-color: #{$gray-10};
+    --red-text-color: #{$red};
+    --error-text-color: #{$red};
+}

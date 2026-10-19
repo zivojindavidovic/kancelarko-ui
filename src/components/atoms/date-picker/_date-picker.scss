@@ -1,0 +1,382 @@
+/* SCSS za prikaz pickera (kalendar) */
+.dp--menu-wrapper {
+    border-radius: 10px;
+
+    &.add-shadow {
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.30);
+    }
+    
+    .dp__menu {
+        padding: 36px;
+        background: var(--dp-background);
+        border-radius: 10px;
+        border: 0;
+        /* kalendar i sat */
+        .dp__instance_calendar {
+
+            .dp__menu_inner {
+                padding: 0;
+                /* header pickera (strelice, selekcija godina/meseci) */
+                .dp--header-wrap {
+
+                    /* mesec i godina */
+                    .dp__month_year_wrap {
+                        display: flex;
+                        align-items: center;
+                        
+                        /* strelice */
+                        .dp--arrow-btn-nav {
+                            order: 2;
+                            color: var(--dp-month-year-text-color);
+                        }
+
+                        /*  dugmad za mesec i godinu */
+                        .dp__month_year_select {
+                            @extend .b-big-font;
+                            text-transform: capitalize;
+                            width: auto;
+                            color: var(--dp-month-year-text-color);
+
+                            &:nth-child(1) {
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                /* kalendar pickera */
+                .dp__calendar {
+                    /* header kalendara - nazivi dana u nedelji */
+                    .dp__calendar_header {
+                        margin-top: 8px;
+                        margin-bottom: 12px;
+
+                        .dp__calendar_header_item {
+                            @extend .b-small-font;
+                            text-transform: capitalize;
+                            color: var(--dp-header-text-color);
+                            padding: 0;
+                            height: 16px;
+                        }
+                    }
+                    /* separator */
+                    .dp__calendar_header_separator {
+                        height: 0;
+                    }
+
+                    /* dani u mesecu */
+                    .dp__calendar {
+                        .dp__calendar_row {
+                            margin-top: 0px;
+                            /* dan */
+                            .dp__calendar_item {
+                                /* sub & ned */
+                                &:nth-last-child(-n + 2) {
+                                    .dp__cell_inner {
+                                        color: var(--dp-weekend-date-color);
+                                    }
+                                }
+
+                                .dp__cell_inner {
+                                    @extend .b-big-font;
+                                    padding: 20px 20px;
+                                    margin-right: 5px;
+                                    border-radius: 100px;
+                                    color: var(--dp-date-color);
+
+                                    /* selektovani dan */
+                                    &.dp__active_date {
+                                        background: var(--dp-date-selected-color);
+                                        color: var(--primary);
+                                    }
+
+                                    /* kada je polje za datum disable */
+                                    &.dp__cell_disabled {
+                                        color: var(--dp-date-disabled-color);
+                                    }
+
+                                    /* hover klasa za datume */
+                                    &.dp__date_hover {
+                                        border-radius: 100px;
+
+                                        &:hover {
+                                            background: var(--dp-date-hover-bg-color);
+                                        }
+                                    }
+
+                                    /* today highlight */
+                                    &.dp__today {
+                                        border: 1px solid var(--primary);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dp--tp-wrap {
+                > .dp__button,
+                .dp__time_picker_overlay_container > .dp__button {
+                    &:hover {
+                        background: var(--dp-time-picker-navigation-hover-bg-color, var(--dp-hover-color));
+                    }
+                }
+            }
+
+            .dp__overlay {
+                background: var(--dp-background);
+                
+                /* dugme koje menja view */
+                .dp__overlay_action {
+                    border-radius: $input-border-radius;
+                    background: var(--dp-action-btn-bg-color);
+                    border: 0px solid var(--dp-action-btn-border-color);
+                    color: var(--dp-action-btn-icon-color);
+
+                    &:hover {
+                        background: var(--dp-action-btn-bg-hover-color);
+                        color: var(--dp-action-btn-icon-hover-color);
+                    }
+                }
+
+                
+                .dp__overlay_container {
+                    .dp__overlay_row  {
+                        .dp__overlay_col {
+                            
+                            /* aktivna celija */
+                            .dp__overlay_cell_active {
+                                border: 1px solid var(--primary);
+                                background: var(--primary);
+                                border-radius: 10px;
+                            }
+
+                            /* ostale */
+                            .dp__overlay_cell {
+                                border-radius: 10px;
+                                color: var(--dp-date-color);
+
+                                &:hover {
+                                    background: var(--dp-action-btn-bg-color);
+                                }
+
+                                &.dp__overlay_cell_disabled {
+                                    background: var(--dp-cell-disabled-bg);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /* html za selekciju vremena (sati i minuti sa strelicama) */
+                .dp__time_col {
+                    /* strelice */
+                    .dp__btn {
+                        &:hover {
+                            color: var(--primary);
+                            background: transparent;
+                        }
+                    }
+                    /* ispis sati/minuta */
+                    .dp__time_display {
+                        border-radius: 10px;
+                        padding: 8px 10px;
+                        border: 1px solid var(--dp-time-btn-border-color);
+                        background: var(--dp-time-btn-bg-color);
+                        color: var(--dp-date-color);
+                    }
+                }
+            }
+        }
+        /* deo sa cancel/confirm dugmicima */
+        .dp__action_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .dp__action_buttons {
+                margin: 0;
+                /* zajednicki stilovi za cancel/confirm */
+                .dp__action_button {
+                    font-size: 0;          // “ubije” tekst
+                    line-height: 0;
+                    background: transparent;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100px;
+                    border: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 15px;
+                    background: var(--dp-action-btn-bg-color);
+
+                    &::before {
+                        background-color: var(--dp-action-btn-icon-color); 
+                        transition: background-color 0.3s ease;
+                    }
+
+                    &:hover {
+                        background: var(--dp-action-btn-bg-hover-color);
+                    }
+
+                    /* dugme cancle */
+                    &.dp__action_cancel {
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            -webkit-mask: url("../../../icons/close-bold.svg") no-repeat center / contain;
+                            mask: url("../../../icons/close-bold.svg") no-repeat center / contain;
+                            
+                            
+                        }
+
+                        &:hover::before {
+                            background-color: var(--dp-action-btn-icon-hover-color);
+                        }
+                    }
+                    /* dugme confirm */
+                    &.dp__action_select {
+                        
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            -webkit-mask: url("../../../icons/checkmark-short.svg") no-repeat center / contain;
+                            mask: url("../../../icons/checkmark-short.svg") no-repeat center / contain;
+                            
+                        }
+
+                        &:hover::before {
+                            background-color: var(--dp-action-btn-icon-hover-color);
+                        }
+
+                    }
+                }
+                
+            }
+
+            /* preview za time/date */
+            .dp__selection_preview {
+                display: none;
+                color: var(--dp-action-btn-secondary-color);
+            }
+
+        }
+
+        /* strelica koja ukazuje na input za selekciju */
+        .dp__arrow_top {
+            background-color: var(--dp-background);
+            top: 0;
+        }
+
+        .dp__arrow_bottom {
+            background-color: var(--dp-background);
+        }
+    }
+}
+
+
+/* SCSS za prikaz inputa za selekciju datuma */
+.b-dp {
+    width: 100%;
+
+    &.b-dp--disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+
+        .dp__main,
+        .dp__input_wrap,
+        .b-dp-chip,
+        .b-dp-chip.is-disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    .dp__main {
+        
+        .dp__input_wrap {
+            
+            /* dugme koje simulira input */
+            .b-dp-chip {
+                @extend .b-small-font;
+                text-align: left;
+                width: 100%;
+                border-radius: $input-border-radius;
+                background-color: var(--dp-input-bg-color);
+                padding: 15px 10px;
+                border: 1px solid var(--dp-input-border-color);
+                color: var(--dp-input-text-color);
+                
+                &.has-error {
+                    border-color: var(--dp-error-input);
+                }
+
+                .b-dp-chip__icon {
+                    position: absolute;
+                    right: 10px;
+                }
+
+                &.is-open {
+                    border-color: var(--dp-input-active-text-color);
+                    color: var(--dp-input-active-border-color);
+                }
+
+                &.no-value {
+                    color: var(--dp-input-placeholder-color);
+                }
+
+                /* ako je otvoren i nema value - oboji ga kada se klikne na input */
+                &.is-open.no-value {
+                    border-color: var(--dp-input-active-text-color);
+                    color: var(--dp-input-active-border-color);
+                }
+
+            }
+            /* hidden input */
+            .b-dp-hidden-input {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+                width: 1px;
+                height: 1px; 
+            }
+
+            /* x - reset ikonica  */
+            .dp--clear-btn {
+                right: 10px;
+            }
+        }
+    }
+
+
+
+    /* SVETLIJA POZADINA */
+    &.lighter-bg {
+        
+        .dp__main {
+            
+            .dp__input_wrap {
+                
+                /* dugme koje simulira input */
+                .b-dp-chip {
+                    background-color: var(--dp-lighter-bg);
+                }
+            }
+        }
+    }
+}
+
+.dp__error {
+    color: var(--dp-error-input);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 16px;
+    @extend .b-small-font;
+}

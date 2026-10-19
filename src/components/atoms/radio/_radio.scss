@@ -1,0 +1,44 @@
+/* RADIO - dodatni stilovi (zajednicka osnova sa checkbox-om je u atoms/checkbox/_checkbox.scss) */
+.form-check .form-check-input.custom-radio { 
+            // ne mogu da resim belu pozadinu pa moram da ugasim i pravim krug preko css-a
+            background-image: none !important;
+            background-color: var(--input-cb-bg-color);
+            border: 1px solid var(--input-cb-border-color);
+            border-radius: 999px;
+            display: inline-grid;
+            place-content: center;
+            cursor: pointer;
+            box-shadow: none;
+            outline: none;
+
+            &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+                border-color: var(--input-disabled-border-color);
+            }
+
+            // unutrašnja "tačka"
+            &::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: var(--input-cb-icon-color); // boja dotića iz teme
+
+                opacity: 0;
+                transform: scale(0.6);
+                transition: opacity 0.15s ease, transform 0.15s ease;
+            }
+
+            &:checked {
+                border: 1px solid var(--input-cb-border-active-color);
+
+                &::after {
+                    background-image: none;
+                    --bs-form-check-bg-image: none;
+
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+}

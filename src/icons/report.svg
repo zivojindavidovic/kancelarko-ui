@@ -1,0 +1,21 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_994_6392)">
+<path d="M12.2574 1H7C4.79086 1 3 2.79086 3 5V19.5C3 21.7091 4.79086 23.5 7 23.5H17C19.2091 23.5 21 21.7091 21 19.5V10.1569C21 9.09599 20.5786 8.07857 19.8284 7.32843L14.3787 1.87868C13.8161 1.31607 13.053 1 12.2574 1Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M12.5 1.5V6C12.5 7.65685 13.8431 9 15.5 9H20.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M17 13L12 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M17 19L12 19" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+<mask id="path-5-inside-1_994_6392" fill="white">
+<rect x="6" y="11" width="4" height="4" rx="1"/>
+</mask>
+<rect x="6" y="11" width="4" height="4" rx="1" stroke="currentColor" stroke-width="2.8" mask="url(#path-5-inside-1_994_6392)"/>
+<mask id="path-6-inside-2_994_6392" fill="white">
+<rect x="6" y="17" width="4" height="4" rx="1"/>
+</mask>
+<rect x="6" y="17" width="4" height="4" rx="1" stroke="currentColor" stroke-width="2.8" mask="url(#path-6-inside-2_994_6392)"/>
+</g>
+<defs>
+<clipPath id="clip0_994_6392">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

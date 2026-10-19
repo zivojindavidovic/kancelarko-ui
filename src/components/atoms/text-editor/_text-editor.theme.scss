@@ -1,0 +1,66 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --tinymce-text-white-color: #{$gray-dark};
+    --tinymce-border-color: #{$gray-30};
+    --tinymce-border-edit-area-color: #{$gray-30};
+    --tinymce-border-between-groups-of-icons: #{$gray-30};
+    
+    --tinymce-header-bg-color: #{$gray-10};
+    --tinymce-header-icon-color: var(--tinymce-border-edit-area-color);
+    --tinymce-header-icon-btn-hover-bg-color: rgba(#{$gray-50-rgb}, 0.1);
+    --tinymce-header-icon-btn-active-bg-color: rgba(#{$gray-50-rgb}, 0.2);
+
+    --tinymce-menubar-bg-color: var(--tinymce-header-bg-color);
+    --tinymce-menubar-list-bg-color: #{$white};
+    --tinymce-menubar-list-text-color: #{$gray-30};
+    --tinymce-menubar-list-hover-bg-color: var(--tinymce-header-icon-btn-hover-bg-color);
+    --tinymce-menubar-list-enabled-bg-color: rgba(#{$blue-rgb}, 0.5);
+    --tinymce-menubar-border-color: var(--tinymce-border-edit-area-color);
+
+    --tinymce-text-color: var(--tinymce-border-edit-area-color);
+    --tinymce-body-bg-color: #{$white};
+    --tinymce-footer-bg-color: var(--tinymce-header-bg-color);
+
+    --tinymce-modal-backdrop-bg-color: #{rgba($gray-10, 0.5)};
+    --tinymce-modal-bg-color: #{$white};
+    --tinymce-modal-border-color: #{$gray-90};
+    --tinymce-modal-title-color: var(--tinymce-text-white-color);
+    --tinymce-modal-icon-x-color: var(--tinymce-border-edit-area-color);
+    --tinymce-modal-input-bg-color: var(--tinymce-header-bg-color);
+    --tinymce-modal-input-label-color: var(--tinymce-border-edit-area-color);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --tinymce-text-white-color: #{$white};
+    --tinymce-border-color: #{$gray-70};
+    --tinymce-border-edit-area-color: #{$gray-70};
+    --tinymce-border-between-groups-of-icons: #{$gray-90};
+    
+    --tinymce-header-bg-color: #{$gray-dark};
+    --tinymce-header-icon-color: var(--tinymce-border-edit-area-color);
+    --tinymce-header-icon-btn-hover-bg-color: rgba(#{$gray-50-rgb}, 0.1);
+    --tinymce-header-icon-btn-active-bg-color: rgba(#{$gray-50-rgb}, 0.2);
+
+    --tinymce-menubar-bg-color: var(--tinymce-header-bg-color);
+    --tinymce-menubar-list-bg-color: #{$gray};
+    --tinymce-menubar-list-text-color: #{$gray-30};
+    --tinymce-menubar-list-hover-bg-color: var(--tinymce-header-icon-btn-hover-bg-color);
+    --tinymce-menubar-list-enabled-bg-color: rgba(#{$blue-rgb}, 0.5);
+    --tinymce-menubar-border-color: var(--tinymce-border-edit-area-color);
+
+    --tinymce-text-color: var(--tinymce-border-edit-area-color);
+    --tinymce-body-bg-color: var(--tinymce-menubar-list-bg-color);
+    --tinymce-footer-bg-color: var(--tinymce-header-bg-color);
+
+    --tinymce-modal-backdrop-bg-color: rgba(#{$gray-dark-rgb}, 0.5);
+    --tinymce-modal-bg-color: var(--tinymce-menubar-list-bg-color);
+    --tinymce-modal-border-color: #{$gray-90};
+    --tinymce-modal-title-color: var(--tinymce-text-white-color);
+    --tinymce-modal-icon-x-color: var(--tinymce-border-edit-area-color);
+    --tinymce-modal-input-bg-color: var(--tinymce-header-bg-color);
+    --tinymce-modal-input-label-color: var(--tinymce-border-edit-area-color);
+}

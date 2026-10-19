@@ -1,0 +1,6 @@
+//#region src/icons/principal.svg?raw
+var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_829_6334)\">\n<path d=\"M18.5 0.93396H6C3.79086 0.93396 2 2.72482 2 4.93396V20.5855C2 22.2942 4.00424 23.216 5.30158 22.104L11.8331 16.5056C12.2146 16.1786 12.7794 16.1854 13.1529 16.5215L19.1621 21.9298C20.4491 23.0882 22.5 22.1748 22.5 20.4432V4.93396C22.5 2.72482 20.7091 0.93396 18.5 0.93396Z\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M13.424 10.0054C14.6863 10.0054 15.7097 8.98204 15.7097 7.71967C15.7097 6.45731 14.6863 5.43396 13.424 5.43396\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M12.4148 9.30537C12.0282 9.30537 11.7148 9.61877 11.7148 10.0054C11.7148 10.392 12.0282 10.7054 12.4148 10.7054L12.4148 10.0054L12.4148 9.30537ZM13.424 10.0054L13.424 9.30537L12.4148 9.30537L12.4148 10.0054L12.4148 10.7054L13.424 10.7054L13.424 10.0054Z\" fill=\"currentColor\"/>\n<path d=\"M13.424 5.43396H9.31103\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M9.33076 5.43396V13.434\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_829_6334\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=principal-C3MU8Wyl.js.map

@@ -1,0 +1,88 @@
+.app-file-upload-wrapper {
+    background: var(--app-file-upload-background-color);
+    padding: 16px;
+    border-radius: 10px;
+    
+    .app-file-upload-title {
+        @extend .b-medium-font;
+        margin-bottom: 16px;
+        color: var(--app-file-upload-title-color);
+    }
+
+    .app-file-upload {
+        @extend .b-small-font;
+        border: 1px dotted var(--app-file-upload-border-color);
+        text-align: center;
+        color: var( --app-file-upload-text-color);
+        padding: 20px;
+        border-radius: 10px;
+
+        &.is-dragging {}
+        &.is-disabled {
+            .app-file-upload__dropzone {
+                cursor: not-allowed;
+	            opacity: 0.6;
+            }
+        }
+
+        .app-file-upload__input {
+            display: none;
+        }
+
+        .app-file-upload-zone {
+
+            max-width: 80%;
+	        margin: auto;
+
+            .app-file-upload-click-button {
+                border: 0;
+                padding: 0;
+                background: none;
+                color: var(--primary);
+            }
+
+            .app-file-upload-icon {
+                margin: 24px 0;
+            }
+
+            .app-file-bottom-section {
+                .app-file-upload__progress {
+                    width: 100%;
+                    height: 4px;
+                    background: var(--app-file-upload-background-color);
+                    border-radius: 999px;
+                    overflow: hidden;
+
+                    .app-file-upload__progress-bar {
+                        height: 100%;
+                        background: var(--app-file-upload-progress-color);
+                        transition: width 0.2s ease;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+
+    .app-file-upload-file-list {
+        @extend .b-small-font;
+        color: var(--app-file-upload-text-color);
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--app-file-upload-list-border-color);
+
+        .app-file-upload-file-list-row {
+            display: flex;
+            justify-content: space-between;
+
+            .app-file-upload-delete-file {
+                transition: color 0.3s ease;
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

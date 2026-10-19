@@ -1,0 +1,20 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --alert-background: #{$white};
+    --alert-title-color: #{$gray};
+    --alert-body-color: #{$gray};
+    --alert-close-icon-color: #{$gray-50};
+    --alert-close-icon-hover-color: var(--primary);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --alert-background: #{$gray};
+    --alert-title-color: #{$gray-10};
+    --alert-body-color: #{$gray-10};
+    --alert-close-icon-color: #{$gray-50};
+    --alert-close-icon-hover-color: var(--primary);
+}

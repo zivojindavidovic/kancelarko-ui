@@ -1,0 +1,66 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --error-color: #{$red};
+    --success-color: #{$green};
+    --form-label-color: #{$gray};
+
+    --input-background-color: #{$gray-10};
+    --input-text-color: #{$gray};
+    --input-placeholder-color: #{$gray-50};
+    --input-border-color:  rgba(#{$gray-50-rgb}, 0.5);
+    --input-border-error-color: var(--error-color);
+    --input-border-success-color: var(--success-color);
+    --input-border-active-color: var(--primary);
+    --input-floating-label-background: #{$gray-10};
+    --input-floating-label-color: #{$gray};
+    --input-floating-label-color-active: var(--primary);
+    --input-caret-color: var(--primary);
+    --input-caret-error-color: var(--error-color);
+    --input-caret-success-color: var(--success-color);
+    --input-icon-color: #{$gray-50};
+
+    --input-group-text-background-color: var(--input-background-color); 
+    --input-group-text-border-color: var(--input-border-color); 
+
+    --input-feedback-error-color: var(--error-color);
+    --input-feedback-success-color: var(--success-color);
+
+    --input-disabled-border-color: #{$gray-50};
+
+    --input-lighter-background: #{$white};
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --error-color: #{$red};
+    --success-color: #{$green};
+    --form-label-color: #{$gray-50};
+
+    --input-background-color: #{$gray-dark};
+    --input-text-color: #{$gray-10};
+    --input-placeholder-color: #{$gray-50};
+    --input-border-color: rgba(#{$gray-50-rgb}, 0.5);
+    --input-border-error-color: var(--error-color);
+    --input-border-success-color: var(--success-color);
+    --input-border-active-color: var(--primary);
+    --input-floating-label-background: #{$gray-dark};
+    --input-floating-label-color: #{$gray-10};
+    --input-floating-label-color-active: var(--primary);
+    --input-caret-color: var(--primary);
+    --input-caret-error-color: var(--error-color);
+    --input-caret-success-color: var(--success-color);
+    --input-icon-color: #{$gray-50};
+
+    --input-group-text-background-color: var(--input-background-color);
+    --input-group-text-border-color: var(--input-border-color); 
+    
+    --input-feedback-error-color: var(--error-color);
+    --input-feedback-success-color: var(--success-color);
+
+    --input-disabled-border-color: #{$gray-50};
+
+    --input-lighter-background: #{$gray};
+}

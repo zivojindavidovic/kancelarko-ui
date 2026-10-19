@@ -1,0 +1,6 @@
+//#region src/icons/supervisor.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.52397 0.742065C9.90397 0.742065 11.024 1.86207 11.024 3.24207C11.024 4.62207 9.90397 5.74207 8.52397 5.74207C7.14397 5.74207 6.02397 4.62207 6.02397 3.24207C6.02397 1.86207 7.14397 0.742065 8.52397 0.742065Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M14.6645 13.1621L14.581 12.8321C14.0593 10.8421 12.9951 9.21212 11.6492 8.20212C11.3048 7.94212 10.8562 8.01212 10.6058 8.39212L8.88421 10.9021C8.6338 11.2721 8.15385 11.2921 7.88257 10.9421L5.9732 8.48212C5.70192 8.13212 5.2637 8.09212 4.92982 8.36212C3.60474 9.44212 2.59267 11.1321 2.12315 13.1621C1.91447 14.0621 2.81374 14.7986 3.32499 14.7986H13.6219C14.1227 14.7986 14.8857 14.1461 14.6874 13.2461L14.6645 13.1621Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M10.544 12.5421H11.544\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M8.36397 11.0421V8.04211\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=supervisor-CnhCUF01.js.map

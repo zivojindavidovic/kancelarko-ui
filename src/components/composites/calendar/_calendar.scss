@@ -1,0 +1,339 @@
+.app-calendar {
+    /* header iznad kalendara - default */
+    .fc-toolbar {
+
+    }
+
+    /* header iznad kalendara - custom */
+    .app-calendar__topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        .app-calendar__nav {
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 16px;
+            }
+        }
+
+        .app-calendar__title {
+            text-transform: capitalize;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: Roboto;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 83.333% */
+            color: var(--calendar-toolbar-title-color);
+            @include media-breakpoint-down(md) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .app-calendar__options {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .calendar-filters-icon {
+                color: var(--calendar-text-color);
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    /* kalenadar */
+    .fc-view-harness {
+        
+        .fc-view {
+            /* table - root */
+            .fc-scrollgrid {
+                overflow: hidden;
+                border-radius: 10px;
+                border: 1px solid var(--calendar-border-color);
+                /* datumi i dani - header */
+                thead {
+                    /* kolone -> fc-col-header-cell fc-day fc-day-wed */
+                    th {
+                        border-color: var(--calendar-border-color);
+                        background-color: var(--calendar-header-bg);
+                        padding: 0;
+
+                        /* pojavljuje se scroll na headeru */
+                        .fc-scroller {
+                            overflow: hidden !important;
+                        }
+                        
+                        &:last-child {
+                            border-right: 0;
+                        }
+                    }
+
+                    /* putanja: table > thead > th > table > thead > th.fc-col-header-cell */
+                    .fc-col-header-cell {
+                        text-transform: capitalize;
+
+                        /* nazivi dana */
+                        a {
+                            @extend .b-small-font;
+                            color: var(--calendar-text-color);
+                            text-decoration: none;
+                            padding: 16px 0;
+                        }
+                    }
+                    
+                }
+                /* rowgroup */
+                tbody {
+                    /* fc-scrollgrid-section fc-scrollgrid-section-body  fc-scrollgrid-section-liquid */
+                    tr {
+
+                        td {
+                            border: 0px;
+
+                            .fc-scroller {
+                                // overflow: hidden !important;
+                                /* fc-scrollgrid-sync-table */
+                                table {
+
+                                    tbody {
+                                        /* celija za dan -> fc-day */
+                                        td { 
+                                            border: 1px solid var(--calendar-border-color);
+                                            height: 124px;
+
+                                            
+                                            /* sub & ned */
+                                            &.fc-day-sat, &.fc-day-sun {
+                                                background-color: var(--calendar-highlight-weekday-bg);
+                                                a {
+                                                    color: var(--primary);
+                                                }
+                                            }
+
+                                            /* danasnji dan - highlight */
+                                            &.fc-day-today {
+                                                background-color: var(--calendar-highlight-bg);
+                                                a {
+                                                    color: var(--primary);
+                                                }
+                                            }
+
+                                            
+                                            /* dan broj */
+                                            .fc-daygrid-day-top {
+                                                flex-direction: row; //da brojevi budu sa leve strane
+                                                a {
+                                                    @extend .b-small-font;
+                                                    text-decoration: none;
+                                                    color: var(--calendar-text-color);
+                                                }
+                                            }
+
+                                            /* div za eventove [fakture, rodjendani..] */
+                                            .fc-daygrid-day-events {
+
+                                                /* div (wrapper) za event */
+                                                .fc-daygrid-event-harness {
+                                                    margin-bottom: 2px;
+
+                                                    /* a - event */
+                                                    .app-calendar__event {
+
+                                                        .fc-event-main {
+                                                            display: flex;
+                                                        }
+                                                    }
+                                                }
+
+                                                /* link + jos 2 */
+                                                .fc-daygrid-day-bottom {
+                                                    
+                                                    a {
+                                                        @extend .b-small-font;
+                                                        color: $gray-50;
+                                                        text-decoration: none;
+                                                        width: 100%;
+                                                        text-align: center;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        transition: color 0.5s ease;
+
+                                                        &:hover {
+                                                            color: var(--primary);
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    
+                }
+            }
+
+
+            &.fc-dayGridMonth-view {}
+
+            &.fc-timeGridWeek-view,
+            &.fc-timeGridDay-view {
+                .fc-col-header-cell-cushion,
+                .fc-timegrid-axis-cushion,
+                .fc-timegrid-slot-label-cushion {
+                    @extend .b-small-font;
+                    color: var(--calendar-timegrid-axis-text-color);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        
+    }
+
+}
+
+/* stilovi za event u kalendaru su izvuceni ovde da bi radili i u modalima */
+.app-calendar__event {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    overflow: hidden; //na manjim rezolucijama se preliva
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    
+    // background-color: red;
+
+    .app-calendar__event-content {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        min-width: 0;
+        line-height: 15px;
+
+        .app-calendar__event-title{
+            flex: 1 1 0;
+            min-width: 0;
+            line-height: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    
+    /* event - fakture */
+    &.app-calendar__event--invoice {
+        background: var(--calendar-event-invoice-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-invoice-color);
+        }
+    }
+    /* event - praznik */
+    &.app-calendar__event--holiday {
+        background: var(--calendar-event-holiday-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-holiday-color);
+        }
+    }
+    /* event - rodjendan */
+    &.app-calendar__event--birthday {
+        background: var(--calendar-event-birthday-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-birthday-color);
+        }
+    }
+    /* event - slava */
+    &.app-calendar__event--slava {
+        background: var(--calendar-event-slava-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-slava-color);
+        }
+    }
+    &.app-calendar__event--contact_birthday {
+        background: var(--calendar-event-birthday-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-birthday-color);
+        }
+    }
+    &.app-calendar__event--document {
+        background: var(--calendar-event-document-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-document-color);
+        }
+    }
+    &.app-calendar__event--epostar {
+        background: var(--calendar-event-epostar-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-epostar-color);
+        }
+    }
+    &.app-calendar__event--kadrovik {
+        background: var(--calendar-event-kadrovik-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-kadrovik-color);
+        }
+    }
+    &.app-calendar__event--task {
+        background: var(--calendar-event-task-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-task-color);
+        }
+    }
+    &.app-calendar__event--note {
+        background: var(--calendar-event-note-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-note-color);
+        }
+    }
+    &.app-calendar__event--jubilee {
+        background: var(--calendar-event-jubilee-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-jubilee-color);
+        }
+    }
+    &.app-calendar__event--alarm {
+        background: var(--calendar-event-alarm-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-alarm-color);
+        }
+    }
+    &.app-calendar__event--reminder {
+        background: var(--calendar-event-alarm-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-alarm-color);
+        }
+    }
+    &.app-calendar__event--resource {
+        background: var(--calendar-event-resource-bg);
+        .app-calendar__event-content {
+            color: var(--calendar-event-resource-color);
+        }
+    }
+    
+}

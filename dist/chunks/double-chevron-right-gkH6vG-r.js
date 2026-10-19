@@ -1,0 +1,6 @@
+//#region src/icons/double-chevron-right.svg?raw
+var e = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_2926_90240)\">\n    <path d=\"M3.65625 2L8.606 6.94975C8.99652 7.34027 8.99652 7.97344 8.606 8.36396L3.65625 13.3137\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M9.65625 2L14.606 6.94975C14.9965 7.34027 14.9965 7.97344 14.606 8.36396L9.65625 13.3137\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n  </g>\n  <defs>\n    <clipPath id=\"clip0_2926_90240\">\n      <rect width=\"16\" height=\"16\" fill=\"currentColor\"/>\n    </clipPath>\n  </defs>\n</svg>";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=double-chevron-right-gkH6vG-r.js.map

@@ -1,0 +1,286 @@
+.form-label {
+    color: var(--form-label-color);
+}
+
+.form-label.normal-text-color {
+    color: var(--normal-text-color);
+}
+
+.form-control {
+    border-radius: $input-border-radius;
+    background-color: var(--input-background-color);
+    border-color: var(--input-border-color);
+    color: var(--input-text-color);
+    height: 48px;
+    padding: 16px;
+    @extend .b-small-font;
+    caret-color: var(--input-caret-color);
+
+
+    &.lighter-bg {
+        background-color: var(--input-lighter-background);
+        border-color: var(--input-border-color);
+
+        &:focus {
+            background-color: var(--input-lighter-background);
+        }
+    }
+
+    &.form-control-sm {
+        height: 36px;
+        padding: 12px 10px 12px 10px;
+        line-height: 20px;
+    }
+
+    &::placeholder {
+        color: var(--input-placeholder-color);
+    }
+
+    &:focus {
+        box-shadow: none;
+        background-color: var(--input-background-color);
+        border-color: var(--input-border-active-color);
+        color: var(--input-text-color);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        background-color: var(--input-background-color);
+        border-color: var(--input-disabled-border-color);
+        color: var(--input-text-color);
+    }
+    
+    &.validation-error {
+        border-color: var(--input-border-error-color);
+    }
+
+    &[type='number']::-webkit-outer-spin-button,
+    &[type='number']::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type='number']{
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+}
+/* textarea */
+textarea.form-control {
+    resize: none;
+    //height: 4em; //4 reda
+    // height: 48px;
+    
+}
+
+
+/* input sa ikonicom */
+.input-group {
+    
+    .input-group-icon {
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        border-radius: $input-border-radius;
+        background-color: var(--input-group-text-background-color);
+        border-color: var(--input-group-text-border-color);
+        transition: border-color 0.15s ease-in-out;
+        color: var(--input-icon-color);
+        padding: 0 16px;
+
+        &.input-group-icon-sm {
+            height: 36px;
+            padding: 12px 10px;
+        }
+
+    }
+
+    &:focus-within {
+
+        .form-control {
+            background-color: var(--input-background-color);
+            border-color: var(--input-border-active-color);
+            color: var(--input-text-color);
+        }
+
+        .input-group-icon {
+            border-color: var(--input-border-active-color);
+        }
+    }
+
+    .form-control:disabled ~ .input-group-icon {
+        opacity: 0.5;
+        cursor: not-allowed;
+        background-color: var(--input-background-color);
+        border-color: var(--input-disabled-border-color);
+        color: var(--input-icon-color);
+    }
+
+    &.input-group-icon-right {
+
+        .form-control {
+            border-right: 0;
+            padding-right: 0;
+        }
+
+        .input-group-icon {
+            border-left: 0px;
+            border-radius: 0 $input-border-radius $input-border-radius 0 !important;
+        } 
+    }
+
+    &.input-group-icon-left {
+
+        .form-control {
+            border-left: 0;
+            padding-left: 0;
+            border-radius: 0 $input-border-radius $input-border-radius 0 !important;
+        }
+        /* kada je ikonica levo a mali input */
+        .form-control-sm {
+            padding-left: 0px;
+        }
+
+        .input-group-icon {
+            border-right: 0px;
+            padding-right: 8px;
+            padding-left: 16px;
+            border-radius:  $input-border-radius 0 0 $input-border-radius !important;
+        } 
+        /* ako ima floating label, mora da se pomeri malo u desno */
+        &.floating-label {
+
+            .form-label {
+                left: 40px
+            }
+
+            /* manipulacija labelom kada je input u fokusu */
+            .form-control:focus ~ .form-label {
+                left: 18px;
+            }
+
+            /* kada postoji vrednost u inputu, labela ide gore */
+            .form-control:not(:placeholder-shown) ~ .form-label {
+                left: 18px;
+            }
+        }
+    }
+
+    &.validation-error {
+
+        .form-control {
+            border-color: var(--input-border-error-color);
+            caret-color: var(--input-caret-error-color);
+        }
+        
+        .input-group-icon {
+            border-color: var(--input-border-error-color); 
+        }
+
+        .form-control-feedback {
+            @extend .b-labels;
+            color: var(--input-feedback-error-color);
+        }
+    }
+
+    &.validation-success {
+
+        .form-control {
+            border-color: var(--input-border-success-color);
+            caret-color: var(--input-caret-success-color);
+        }
+
+        .input-group-icon {
+            border-color: var(--input-border-success-color);
+        }
+
+        .form-control-feedback {
+            @extend .b-labels;
+            color: var(--input-feedback-success-color);
+        }
+    }
+    /* kada zelimo svetiliju pozadinu (imamo dva slucaja, tamna (defaulut) i svetlija (.lighter-bg) */
+    &.lighter-bg {
+
+        .form-control:focus ~ .form-label,
+        .form-control:not(:placeholder-shown) ~ .form-label {
+            background: var(--input-lighter-background);
+        }
+        
+        .input-group-icon {
+           background-color: var(--input-lighter-background);
+        }
+        .form-control {
+            background-color: var(--input-lighter-background);
+        }
+    }
+}
+
+/* input bez ikonice */
+.input-group-no-icon {
+    
+    &.validation-error {
+
+        .form-control {
+            border-color: var(--input-border-error-color);
+            caret-color: var(--input-caret-error-color);
+        }
+        
+        .input-group-icon {
+            border-color: var(--input-border-error-color); 
+        }
+
+        .form-control-feedback {
+            @extend .b-labels;
+            color: var(--input-feedback-error-color);
+        }
+    }
+}
+
+
+/* stilovi za lebdecu labelu */
+.floating-label {
+    position: relative;
+
+    .form-label {
+        position: absolute;
+        z-index: 5;
+        top: 16px;
+        left: 18px;
+        transition: all 0.2s ease;
+        @extend .b-small-font;
+    }
+    
+    /* manipulacija labelom kada je input u fokusu */
+    .form-control:focus ~ .form-label {
+        @extend .b-labels;
+        top: -10px;
+        background: var(--input-floating-label-background);
+        padding: 2px 4px;
+        border-radius: 4px !important;
+        color: var(--input-floating-label-color-active);
+    }
+
+    /* kada postoji vrednost u inputu, labela ide gore */
+    .form-control:not(:placeholder-shown) ~ .form-label {
+        @extend .b-labels;
+        top: -10px;
+        background: var(--input-floating-label-background);
+        padding: 2px 4px;
+        border-radius: 4px !important;
+        color: var(--input-floating-label-color-active);
+    }
+    
+
+}
+
+/* validacioni text ispod inputa */
+.form-control-feedback {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 16px;
+    @extend .b-small-font;
+
+}

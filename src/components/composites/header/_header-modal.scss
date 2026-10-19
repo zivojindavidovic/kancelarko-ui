@@ -1,0 +1,379 @@
+.header-modal {
+    top: 76px;
+    right: 15px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    background: var(--header-modal-bg);
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.70);
+    border-radius: 30px;
+    padding: 32px 0px;
+    transition: all 0.2s ease;
+    max-width: 500px;
+
+    &.max-width-300 {
+        max-width: 300px;
+    }
+    &.max-width-350 {
+        max-width: 350px;
+    }
+    
+
+    .header-modal-header {
+        padding: 0 24px 26px 24px;
+        border-bottom: 1px solid var(--header-modal-border-color);
+
+        .header-modal-title {
+            opacity: 1;
+            color: var(--header-modal-text-color);
+            @extend .b-big-font;
+        }
+
+        /* kada je u pitanju npr: MOJ NALOG */
+        .header-modal-header-with-image {
+            transition: opacity 0.2s, transform 0.3s;
+            opacity: 1;
+            display: flex;
+            transform: translateX(0);
+
+            .header-image {
+                width: 48px;
+                height: 48px;
+                overflow: hidden;
+                border-radius: 100%;
+                margin-right: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .header-info {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    .header-modal-main {
+        opacity: 0;
+
+        .header-menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 24px 0 24px;
+            border-bottom: 1px solid var(--header-modal-border-color);
+
+            .header-tabs {
+                display: flex;
+
+                .nav-tabs {
+                    border: none;
+
+                    .nav-item {
+
+                        .nav-link {
+                            background-color: none;
+                            background: none;
+                            border: none;
+                            @extend .b-small-font;
+                            color: var(--header-modal-menu-tab-text-color);
+                            padding: 0 0 16px 0;
+                            margin-right: 36px;
+
+                            &.active {
+                                border-bottom: 3px solid var(--header-modal-menu-tab-border-color-active);
+                                color: var( --header-modal-menu-tab-text-color-active);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header-action {
+                @extend .b-small-font;
+                color: var(--header-modal-action-text-color);
+            }
+        }
+
+        .header-content {
+            padding: 24px 0px 0 0px;
+            max-height: 500px;
+            overflow-y: auto;
+            transform: translateX(0);
+            opacity: 1;
+            transition: opacity 0.4s, transform 0.2s;
+            
+            .header-content-row {
+                display: flex;
+                align-items: center;
+                padding: 10px 24px; 
+                @extend .b-small-font;
+
+                .header-content-icon {
+                    margin-right: 12px;
+                }
+
+                .header-content-content {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .content-top {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 6px;
+                        color: var(--header-modal-text-color);
+
+                        .notification-time {
+                            color: var(--header-modal-text-muted-color);
+                            width: 130px;
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+
+                            .unread-notification {
+                                width: 12px;
+                                height: 12px;
+                                background-color: var(--primary);
+                                border-radius: 100%;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        .last-used-document-link {
+                            a {
+                                color: var(--header-modal-text-color);
+                                text-decoration: none;
+                            }
+                        }
+
+                    }
+
+                    .content-bot {
+                        display: flex;
+                        justify-content: space-between;
+                        color: var(--header-modal-text-muted-color-light);
+
+                        .notification-icon-action {
+                            width: 24px;
+                            display: flex;
+                            justify-content: end;
+                        }
+
+                        .time, .date {
+                            display: flex;
+                            @extend .b-small-font;
+                        }
+                    }
+
+                }
+
+                &:hover {
+                    background-color: rgba(var(--primary-rgb), 0.3);
+
+                    .header-content-content {
+
+                        .content-top {
+
+                            .last-used-document-link {
+                                a {
+                                    text-decoration: underline;
+                                    color: var(--primary);
+                                }
+                            }
+                        }
+
+                        .content-bot {
+
+                            .notification-icon-action {
+                                svg {
+                                    color: var(--primary);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    &.show-header-modal {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10; //bio je auto, ali se iz nepoznatog razloga header modal prikazivao ispod kontenta. Pa je promenjeno u 10
+        transform: translateY(0px);
+
+        .header-modal-main {
+            opacity: 1;
+        }
+    }
+
+    hr {
+        border-color: var(--header-modal-border-color);
+    }
+
+    /* kada je u pitanju npr: MOJ NALOG  odnosno kada imamo podmenije*/
+    &.menu-modal {
+        
+        transition: all 0.3s ease;
+
+        .header-modal-header {
+            .header-modal-title {
+                @extend .hidden;
+                transition: transform 0.3s !important; //da malo kasnije udje naslov u odnosu na sadrzaj
+            }
+        }
+
+        .header-modal-main {
+            
+           
+            .header-content {
+                padding-top: 0px;
+                transition: opacity 0.4s, transform 0.3s;
+                
+                .header-content-row { 
+                    padding: 12px 24px;
+                    color: var(--header-modal-text-muted-color);
+                    cursor: pointer;
+
+                    .header-content-content {
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .link {}
+                        .link-toggle {}
+                    }
+
+                    &:hover {
+                        
+                        .header-content-content {
+
+                            .link,
+                            .link-toggle {
+                                color: var(--header-modal-text-color);
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* divovi za podsekcije/komponente koji se prikazuju */
+            .header-modal-sub-content {
+                @extend .hidden; /* inicijalna podesavanja zbog animacija - sakriven */
+
+                .sub-content-section {
+                    width: 100%;
+                    
+                    .sub-content-section-row {
+                        padding: 12px 24px;
+                        display: flex;
+                        align-items: center;
+
+                        .sub-content-icon {
+                            width: 16px;
+                            color: var(--primary);
+                            line-height: 0;
+                        }
+
+                        .sub-content-text {
+                            @extend .b-small-font;
+                            width: 100%;
+                            padding-left: 16px;
+
+                            &.hover-primary-color:hover,
+                            .hover-primary-color:hover {
+                                color: var(--primary);
+                            }
+                        }
+
+                        .sub-content-info {
+                            width: 16px;
+                            color: var(--header-modal-text-muted-color);
+                            line-height: 0;
+                            &:hover {
+                                color: var(--primary);
+                            }
+                        }
+                    }
+
+                    .sub-content-info-box {
+                        @extend .b-small-font;
+                        color: var(--header-modal-text-muted-color);
+                        border-bottom: 1px solid var(--header-modal-border-color);
+
+                        div {
+                            padding: 0px 24px 12px 56px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .hidden {
+            transition: opacity 0.1s, transform 0.2s;
+            opacity: 0;
+            transform: translateX(100px);
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .shown {
+            transition: opacity 0.4s, transform 0.3s;
+            opacity: 1 !important;
+            transform: translateX(0) !important;
+            position: relative !important;
+            visibility: visible !important;
+        }
+    }
+}
+
+.header-modal.header-applications-modal {
+    width: calc(100% - 30px);
+    max-width: 320px;
+    padding: 24px 0;
+
+    .header-apps-menu-row {
+        min-height: 56px;
+        padding: 12px 24px;
+        color: #{$gray-50};
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        cursor: default;
+
+        &[href] {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background: rgba($blue, 0.3);
+            color: var(--dropdown-item-active-text-color);
+        }
+    }
+}
+
+/*  < 992px (lg) */
+@include media-breakpoint-down(lg) {
+    .header-modal {
+        max-width: calc(100% - 30px);
+
+        &.max-width-300,
+        &.max-width-350,
+        &.header-applications-modal {
+            max-width: calc(100% - 30px);
+        }
+    }
+    
+}

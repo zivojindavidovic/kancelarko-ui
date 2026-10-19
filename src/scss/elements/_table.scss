@@ -1,0 +1,89 @@
+
+    .table {
+        width: 100%;
+        font-size: 14px;
+        padding: 16px 24px;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+
+        &.table-layout-fixed {
+            table-layout: fixed;
+        }
+
+        thead {
+            th {
+                background: var(--table-header-background-color);
+                color: var(--table-header-text-color);
+                text-align: left;
+                border: none;
+                padding: 16px 24px;
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: var(--table-border-color);
+
+                td {
+                    background: var(--table-body-background-color);
+                    color: var(--table-body-text-color);
+                    padding: 16px 24px;
+                    vertical-align: middle;
+                    border-bottom: 1px solid var(--table-border-bottom-rgba-gray-50-50);
+                }
+            }
+        }
+    }
+
+.table-container {
+    .table-wrapper {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    table {
+        width: 100%;
+        min-width: max-content;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background: var(--table-header-background-color);
+        position: sticky;
+        top: 0;
+    }
+
+    thead th {
+        padding: 16px 18px;
+        color: var(--primary);
+    }
+
+    tbody tr {
+        border-bottom: 1px solid var(--table-border-bottom-rgba-gray-50-50);
+        transition: background 0.2s ease;
+    }
+
+    tbody tr:hover {
+        background-color: var(--table-tr-hover-bg-color-rgba-white-003);
+    }
+
+    tbody td {
+        padding: 16px 18px;
+        white-space: nowrap;
+    }
+}
+
+// Static privilege matrices shown inside user-account settings accordions.
+.table.table-company-privileges {
+    thead th {
+        background: var(--gray-bg) !important;
+        color: var(--primary);
+    }
+
+    tbody td {
+        background: transparent !important;
+    }
+
+    tbody tr:hover {
+        background: transparent;
+    }
+}

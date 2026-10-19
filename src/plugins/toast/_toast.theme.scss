@@ -1,0 +1,20 @@
+:root[data-theme="light"],
+[data-theme="light"] {
+    --primary: #{$blue};
+    --toast-background-color: #{rgba($white, 0.7)};
+    --toast-title-text-color: #{$gray};
+    --toast-body-text-color: #{$gray-50};
+    --toast-close-button-color: #{$gray-50};
+    --toast-progress-bar-color: var(--primary);
+}
+
+:root,
+:root[data-theme="dark"],
+[data-theme="dark"] {
+    --primary: #{$blue};
+    --toast-background-color: rgba(#{$gray-rgb}, 0.7);
+    --toast-title-text-color: #{$gray-10};
+    --toast-body-text-color: #{$gray-50};
+    --toast-close-button-color: #{$gray-50};
+    --toast-progress-bar-color: var(--primary);
+}

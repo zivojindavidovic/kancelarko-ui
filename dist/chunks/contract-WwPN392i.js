@@ -1,0 +1,6 @@
+//#region src/icons/contract.svg?raw
+var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_384_4617)\">\n<g clip-path=\"url(#clip1_384_4617)\">\n<path d=\"M4 5.5V5C4 2.79086 5.79086 1 8 1H13.2574C14.053 1 14.8161 1.31607 15.3787 1.87868L20.8284 7.32843C21.5786 8.07857 22 9.09599 22 10.1569V20.5C22 22.1569 20.6569 23.5 19 23.5H7C5.34315 23.5 4 22.1569 4 20.5V18.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M13.5 1.5V6C13.5 7.65685 14.8431 9 16.5 9H21.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M11.9006 16.3351L4.8489 9.28333C4.69242 9.12685 4.43872 9.12685 4.28224 9.28333L2.28334 11.2822C2.12686 11.4387 2.12686 11.6924 2.28334 11.8489L9.33508 18.9006C9.38768 18.9532 9.45389 18.9902 9.52629 19.0073L12.1435 19.6255C12.4334 19.694 12.6941 19.4334 12.6256 19.1435L12.0073 16.5263C11.9902 16.4539 11.9532 16.3877 11.9006 16.3351Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n</g>\n<defs>\n<clipPath id=\"clip0_384_4617\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n<clipPath id=\"clip1_384_4617\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=contract-WwPN392i.js.map

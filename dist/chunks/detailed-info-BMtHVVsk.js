@@ -1,0 +1,6 @@
+//#region src/icons/detailed-info.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1355_3468)\">\n<path d=\"M3 5V3.33329C3 1.86053 4.19391 0.666626 5.66667 0.666626H9.19807C9.71277 0.666626 10.2077 0.865059 10.5798 1.22065L14.1756 4.65668C14.7022 5.15981 15 5.85639 15 6.58465V13C15 14.1046 14.1046 15 13 15H5C3.89543 15 3 14.1046 3 13V10\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M9 0.5V4.1C9 5.42548 10.0745 6.5 11.4 6.5H14.5\" stroke=\"currentColor\" stroke-width=\"1.68\" stroke-linecap=\"round\"/>\n<circle cx=\"6\" cy=\"5\" r=\"1\" fill=\"currentColor\"/>\n<path d=\"M6.17911 7.50244V12.0024\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M6.17911 7.50244L5.17911 7.50244\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_1355_3468\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=detailed-info-BMtHVVsk.js.map

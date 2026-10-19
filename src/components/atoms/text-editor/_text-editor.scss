@@ -1,0 +1,225 @@
+.tox.tox-tinymce {
+    border-radius: 10px !important;
+    border: 0.5px solid var(--tinymce-border-color) !important;
+    background: transparent !important;
+    overflow: hidden;
+
+    box-shadow: none !important;
+}
+
+/* Toolbar wrapper */
+.tox {
+
+    .tox-editor-header {
+        background: var(--tinymce-header-bg-color) !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+
+    /* Toolbar */
+    .tox-toolbar,
+    .tox-toolbar__primary{
+        background: var(--tinymce-header-bg-color) !important;
+        border: none !important;
+        padding: 10px 16px !important;
+        gap: 24px !important;
+    }
+
+    .tox-promotion {
+        padding: 0 !important;
+    }
+
+    // menibar
+    .tox-menubar {
+        background: var(--tinymce-header-bg-color) !important;
+        border: none !important;
+
+        button {
+            background-color: var(--tinymce-menubar-bg-color) !important;
+            color: var(--tinymce-text-color) !important;
+        }
+
+        button:hover{
+            background: var(--tinymce-header-icon-btn-hover-bg-color) !important;
+            color: var(--primary) !important;
+        }
+
+        .tox-mbtn.tox-mbtn--select.tox-mbtn--active {
+            color: var(--primary) !important;
+        }
+    }
+
+    /* Dropdown */
+    .tox-menu {
+        background: var(--tinymce-menubar-list-bg-color) !important;
+        border: 1px solid var(--tinymce-modal-border-color) !important;
+        border-radius: 10px !important;
+    }
+
+    /* Menu item */
+    .tox-collection__item {
+        color: var(--tinymce-menubar-list-text-color) !important;
+
+        &:hover {
+            background: var(--tinymce-menubar-list-hover-bg-color) !important;
+        }
+    }
+
+    // padajuci meni
+    .tox-menu {
+        .tox-collection__group {
+            border-top: 1px solid var(--tinymce-menubar-border-color) !important;
+        }
+        .tox-collection__group:first-child {
+            border-top: 0 !important;
+        }
+
+        .tox-collection__item--enabled {
+            background-color: var(--tinymce-menubar-list-enabled-bg-color) !important;
+        }
+    }
+
+    /* Dugmad */
+    .tox-tbtn {
+        width: 28px !important;
+        height: 28px !important;
+
+        border-radius: 6px !important;
+        background-color: transparent !important;
+        color: var(--tinymce-header-icon-color) !important;
+        margin: 0 !important;
+
+        transition: 0.2s ease;
+
+        svg {
+            color: inherit;
+            fill: currentColor !important;
+        }
+
+        &:hover {
+            background: var(--tinymce-header-icon-btn-hover-bg-color) !important;
+            color: var(--primary) !important;
+        }
+    }
+
+    /* Aktivno dugme */
+    .tox-tbtn--enabled {
+        background: var(--tinymce-header-icon-btn-active-bg-color) !important;
+        color: var(--primary) !important;
+    }
+
+    /* Separator */
+    .tox-toolbar__group {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        position: relative;
+
+        & + .tox-toolbar__group::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            width: 0.5px;
+            height: 16px;
+            background-color: var(--tinymce-border-between-groups-of-icons);
+            transform: translateY(-50%);
+        }
+    }
+
+    /* Glavni editor */
+    .tox-edit-area {
+        border-top: 0.5px solid var(--tinymce-border-edit-area-color) !important;
+    }
+
+    /* iframe */
+    .tox-edit-area__iframe {
+        background: var(--tinymce-body-bg-color) !important;
+    }
+
+    /* Footer/status */
+    .tox-statusbar {
+        // display: none !important;
+        background-color: var(--tinymce-footer-bg-color) !important;
+        border-top: 0.5px solid var(--tinymce-border-edit-area-color) !important;
+        padding: 16px !important;
+
+        .tox-statusbar__path-item {
+            color: var(--tinymce-text-color) !important;
+        }
+
+        .tox-statusbar__wordcount{
+            color: var(--tinymce-text-color) !important;
+        }
+    }
+
+    /* Dialog - modal */
+    .tox-dialog {
+        background: var(--tinymce-modal-bg-color) !important;
+        border: 1px solid var(--tinymce-modal-border-color) !important;
+        border-radius: 12px !important;
+        
+        .tox-dialog__header {
+            background-color: var(--tinymce-modal-bg-color);
+
+            .tox-dialog__title {
+                color: var(--tinymce-modal-title-color) !important;
+            }
+        }
+
+        .tox-icon {
+            color: var(--tinymce-modal-icon-x-color) !important;
+        }
+
+        & button:focus {
+            outline: 0 !important;
+        }
+
+        .tox-dialog__body{
+            margin: 24px 0px;
+        }
+
+        .tox-dialog__body-nav-item {
+            color: var(--tinymce-modal-title-color) !important;
+        }
+        
+        .tox-dialog__body-nav-item--active {
+            color: var(--primary) !important;
+        }
+
+        .tox-dialog__footer {
+            background-color: var(--tinymce-modal-bg-color) !important;
+        }
+
+        .tox-listbox {
+            background-color: var(--tinymce-modal-input-bg-color) !important;
+            color: var(--tinymce-modal-input-label-color) !important;
+            border: 1px solid var(--tinymce-modal-border-color) !important;
+        }
+    }
+
+    /* Backdrop for modal */
+    .tox-dialog-wrap__backdrop {
+        background: var(--tinymce-modal-backdrop-bg-color) !important;
+    }
+
+    /* Inputs */
+    .tox-textfield,
+    .tox-textarea,
+    .tox-selectfield select {
+        background: var(--tinymce-modal-input-bg-color) !important;
+        border: 1px solid var(--tinymce-border-color) !important;
+        color: var(--tinymce-modal-title-color) !important;
+        border-radius: 8px !important;
+    }
+
+    /* Label */
+    .tox-label {
+        color: var(--tinymce-modal-input-label-color) !important;
+    }
+    
+}

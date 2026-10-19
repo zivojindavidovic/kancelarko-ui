@@ -1,0 +1,405 @@
+.app-select {
+    position: relative;
+
+    /* lib main-wrapper */
+    .multiselect {
+        
+        background: var(--app-select-background);
+        border: 1px solid var(--app-select-border-color);
+        border-radius: 10px;
+        min-height: 48px;
+
+        /* search deo - onaj koji se vidi uvek */
+        .multiselect-wrapper {
+            min-height: 48px;
+
+            .multiselect-search {
+                background: var(--app-select-background);
+                border-radius: 10px;
+                color: var(--app-select-font-color);
+                caret-color: var(--app-select-caret-color);
+            }
+
+            /* selektovana vrednost */
+            .app-select__singlelabel {
+                @extend .b-small-font;
+                z-index: 5;
+                width: 100%;
+                color: var(--app-select-font-muted-color);
+                padding: 5px 16px;
+                display: flex;
+                overflow: hidden;
+
+                .label-title {
+                    max-width: 100%;
+                    overflow-x: hidden;
+                }
+            }
+            /* multiselekt vrednosti */
+            .app-select__multiplelabel {
+                @extend .b-small-font;
+                z-index: 5;
+                width: 100%;
+                color: var(--app-select-font-color);
+                
+                padding: 5px 16px;
+            }
+
+            /* multiselect  sa tagovima */
+            .multiselect-tags {
+                margin-top: 4px;
+                width: calc(100% - 46px);
+                /* normalna upotreba */
+                .app-select__tag {
+                    @extend .b-extra-small-font;
+                    background: var(--app-select-tag-bg);
+                    border-radius: 10px;
+                    display: flex;
+                    padding: 6px 6px 6px 10px;
+                    align-items: center;
+                    gap: 8px;
+                    align-self: stretch;
+                    margin-bottom: 4px;
+                    margin-right: 4px;
+                    color: var(--app-select-font-muted-color);
+                    max-width: 100%;
+                    
+
+                    .tag-title {
+                        overflow-x: hidden;
+                    }
+
+                    .app-chip__remove {
+                        background: transparent;
+                        border: 0;
+                        color: var(--app-select-close-icon-color);
+                        // width: 16px;
+                        height: 16px;
+                        padding: 2px 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: color 0.3s ease;
+
+                        svg {
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        &:hover {
+                            color: var(--primary);
+                            transition: color 0.3s ease;
+                        }
+                    }
+                }
+
+                /* employee select upotreba */
+                .app-employee-tag {
+                    @extend .app-select__tag;
+                    max-width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    
+                    .app-employee-tag-info-wrap {
+                        display: flex;
+                        flex-direction: column;
+                        .app-employee-tag__name {
+                            color: var(--normal-text-color);
+                        }
+                    }
+
+                    .app-employee-tag__remove {
+                        @extend .app-chip__remove;
+                    }
+                }
+
+                /* search */
+                .multiselect-tags-search-wrapper {
+                    width: 100%;
+
+                    .multiselect-tags-search {
+                        background: var(--app-select-background);
+                        color: var(--app-select-font-color);
+                        caret-color: var(--app-select-caret-color);
+                    }
+                    
+                }
+            }
+
+            .multiselect-caret {
+                width: 16px;
+                height: 16px;
+                -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%0A%3Cpath d='M13.3137 6.65686L7.65685 12.3137L2 6.65686' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'%2F%3E%0A%3C%2Fsvg%3E") no-repeat center / contain;
+                mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%0A%3Cpath d='M13.3137 6.65686L7.65685 12.3137L2 6.65686' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'%2F%3E%0A%3C%2Fsvg%3E") no-repeat center / contain;
+            }
+
+            .multiselect-clear {
+                .multiselect-clear-icon {
+                    width: 16px;
+                    height: 16px;
+                    -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cg clip-path='url(%23clip0_3_149)'%3E%3Cpath d='M4.00001 19.9999L20 3.99992' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'%2F%3E%3Cpath d='M20 19.9999L4.00003 3.99992' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath id='clip0_3_149'%3E%3Crect width='24' height='24' fill='white'%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E") no-repeat center / contain;
+                    mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cg clip-path='url(%23clip0_3_149)'%3E%3Cpath d='M4.00001 19.9999L20 3.99992' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'%2F%3E%3Cpath d='M20 19.9999L4.00003 3.99992' stroke='currentColor' stroke-width='1.4' stroke-linecap='round'%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath id='clip0_3_149'%3E%3Crect width='24' height='24' fill='white'%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E") no-repeat center / contain;
+
+                }
+
+                
+                &:hover {
+                    .multiselect-clear-icon {
+                        background: var(--app-select-clear-icon-color); //boja ikonice
+                    }
+                    
+                }
+            }
+
+            /* AppEmployeeSelect - ovo je kada se koristi komponenta sa zaposlenima */
+            .app-employee-single {
+                z-index: 1;
+                width: calc(100% - 46px);
+                padding: 5px 16px;
+                overflow-x: hidden; //kada je mala sirina - fix
+
+                .app-employee-single__avatar-wrap {
+                    display: none;
+                    .app-employee-single__avatar {}
+                }
+
+                .app-employee-single__content {
+                    @extend .b-extra-small-font;
+                    
+                    .app-employee-single__name {
+                        overflow-x: hidden; 
+                        color: var(--normal-text-color);
+                    }
+                    .app-employee-single__email {
+                        overflow-x: hidden; 
+                        color: var(--muted-text-color);
+                    }
+                }
+            }
+        }
+
+        /* deo sa opcijama */
+        .multiselect-dropdown {
+            border: 1px solid var(--app-select-border-active-color);
+            border-radius: 10px;
+            transform: translateY(105%); //test
+            overflow-y: auto; //test
+            background: var(--app-select-background);
+
+            .multiselect-options {
+                background: var(--app-select-background);
+
+                .multiselect-option {
+                    background: var(--app-select-background);
+                    color: var(--app-select-font-muted-color);
+                    padding: 12px 16px;
+
+                    .app-select__option {
+                        @extend .b-small-font;
+                        word-break: break-all;
+                        
+                        .option-checkbox {
+                            margin-right: 8px;
+
+                            .custom-checkbox {
+                                height: 16px;
+                                width: 16px;
+                                border-radius: 4px;
+
+                                &::after {
+                                    width: 8px;
+                                    height: 8px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    /* hover */
+                    &.is-pointed {
+                        color: var(--app-select-font-color);
+                        background: var(--app-select-is-pointed-bg);
+                    }
+
+                    /* ako je selektovano i ukljucena opcija da ne nestaju selektovane opcije */
+                    &.is-selected {
+                        background: var(--app-select-is-selected-bg);
+                    }
+
+                    /* ovo je stil kada koristimo appEmployeeSelect */
+                    .app-employee-option {
+                        display: flex;
+
+                        .app-employee-option__avatar-wrap {
+                            width: 32px;
+                            height: 32px;
+                            margin-right: 12px;
+
+                            .app-employee-option__avatar {
+                                border-radius: 100%;
+                                width: 32px;
+                                height: 32px;
+
+                                &.app-employee-option__avatar--fallback {
+                                    background: var(--app-select-avatar-bg);
+                                    color: var(--primary);
+                                    justify-content: center;
+                                    display: flex;
+                                    align-items: center;
+                                    @extend .b-small-font;
+                                }
+                            }
+                        }
+
+                        .app-employee-option__content {
+                            @extend .b-small-font;
+                            word-break: break-all;
+
+                            .app-employee-option__name {
+                                color: var(--normal-text-color);
+                            }
+
+                            .app-employee-option__email{
+                                color: var(--muted-text-color);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .app-select__empty {
+                background: var(--app-select-background);
+                @extend .b-small-font;
+                padding: 12px 16px;
+                color: var(--app-select-font-muted-color);
+            }
+        }
+
+        &.is-open.is-active {
+            box-shadow: none;
+            border-color: var(--app-select-border-active-color);
+            border-radius: 10px;
+        }
+
+        &.is-disabled {
+            background: var(--app-select-background);
+            border-color: var(--app-select-border-color);
+
+            .multiselect-wrapper {
+                cursor: not-allowed;
+            }
+
+            .multiselect-caret {
+                background-color: var(--app-select-font-muted-color);
+            }
+        }
+
+    }
+
+    /* za situacije kada se ocekuje manji select */
+    &.select-sm {
+        .multiselect {
+            min-height: 38px;
+            .multiselect-wrapper {
+                min-height: 38px;
+            }
+        }
+    }
+
+    /* label */
+    .app-floating__label {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: 0.15s ease;
+        opacity: 1;
+        color: var(--app-select-font-muted-color);
+        @extend .b-small-font;
+    }
+
+    /* kad ima vrednost (ili fokus) label ide gore */
+    &.is-filled,
+    &:focus-within {
+
+        .app-floating__label {
+            @extend .b-labels;
+            top: -10px;
+            transform: translateY(0);
+            background: var(--input-floating-label-background);
+            padding: 2px 4px;
+            border-radius: 4px !important;
+            color: var(--input-floating-label-color-active);
+        }
+    }
+
+    /* kada ima error */
+    &.has-error {
+        .multiselect {
+            border-color: var(--error-color);
+        }
+    }
+
+    /* kada zelimo da input ima svetliju pozadinsku boju */
+    &.lighter-bg {
+        .multiselect {
+            background: var(--app-select-lighter-bg);
+
+            .multiselect-wrapper {
+
+                .multiselect-search {
+                    background: var(--app-select-lighter-bg);
+                }
+
+                .multiselect-tags {
+                    margin-top: 8px;
+                    .app-select__tag {
+                        background-color: var(--app-select-dark-bg);
+                    }
+
+                    .multiselect-tags-search-wrapper {
+                        .multiselect-tags-search {
+                            background: var(--app-select-lighter-bg);
+                        }
+                    }
+                }
+            }
+
+            .multiselect-dropdown {
+                background: var(--app-select-lighter-bg);
+                
+                .multiselect-options {
+                    .multiselect-option {
+                        background: var(--app-select-lighter-bg);
+
+                        &.is-pointed {
+                            color: var(--app-select-font-color);
+                            background: var(--app-select-is-pointed-bg);
+                        }
+
+                        &.is-selected {
+                            background: var(--app-select-is-selected-bg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .app-floating__label {
+            background-color: var(--app-select-lighter-bg);
+        }
+    }
+
+    &.is-disabled {
+        opacity: 0.5;
+    }
+}
+
+.app-select__error {
+    color: var(--error-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 16px;
+    @extend .b-small-font;
+}

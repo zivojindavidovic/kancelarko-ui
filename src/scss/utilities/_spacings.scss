@@ -1,0 +1,71 @@
+// spacing sa korakom 4px
+$spacing: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  8: 32px,
+  9: 36px,
+  10: 40px,
+  12: 48px,
+  16: 64px
+);
+
+/* margin */
+
+@each $key, $value in $spacing {
+  .margin-k-#{$key} { margin: $value !important; }
+
+  .margin-top-#{$key} { margin-top: $value !important; }
+  .margin-bottom-#{$key} { margin-bottom: $value !important; }
+  .margin-left-#{$key} { margin-left: $value !important; }
+  .margin-right-#{$key} { margin-right: $value !important; }
+
+  .margin-x-#{$key} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .margin-y-#{$key} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+}
+
+/* padding */
+
+@each $key, $value in $spacing {
+  .padding-#{$key} { padding: $value !important; }
+
+  .padding-top-#{$key} { padding-top: $value !important; }
+  .padding-bottom-#{$key} { padding-bottom: $value !important; }
+  .padding-left-#{$key} { padding-left: $value !important; }
+  .padding-right-#{$key} { padding-right: $value !important; }
+
+  .padding-x-#{$key} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .padding-y-#{$key} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}
+
+/* gap (flex/grid) */
+
+@each $key, $value in $spacing {
+  .gap-k-#{$key} { gap: $value !important; }
+  .gap-x-#{$key} { column-gap: $value !important; }
+  .gap-y-#{$key} { row-gap: $value !important; }
+}
+
+@for $i from 1 through 100 {
+  .gap-#{$i}px {
+    gap: #{$i}px !important;
+  }
+}

@@ -1,0 +1,21 @@
+.nav {
+    &.nav-tabs {
+        &.safeguard {
+            border-bottom: 1px solid var(--muted-color);
+
+            .nav-link {
+                border: none;
+
+                &:hover {
+                    color: var(--primary);
+                }
+
+                &.active{
+                    border-bottom: 3px solid var(--primary);
+                    background-color: transparent;
+                    color: var(--primary-text-color);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+//#region src/icons/dearchive.svg?raw
+var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_4482_8940)\">\n<g clip-path=\"url(#clip1_4482_8940)\">\n<path d=\"M2 5V12C2 13.6569 3.34315 15 5 15H11C12.6569 15 14 13.6569 14 12V5\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M3 0.700195H13C14.2703 0.700195 15.2998 1.72975 15.2998 3V4C15.2998 4.71797 14.718 5.2998 14 5.2998H2C1.28203 5.2998 0.700195 4.71797 0.700195 4V3C0.700195 1.72975 1.72975 0.700195 3 0.700195Z\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M6 10L10 10\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n</g>\n<defs>\n<clipPath id=\"clip0_4482_8940\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n<clipPath id=\"clip1_4482_8940\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
+//#endregion
+export { e as default };
+
+//# sourceMappingURL=dearchive-BF1oqQRB.js.map
