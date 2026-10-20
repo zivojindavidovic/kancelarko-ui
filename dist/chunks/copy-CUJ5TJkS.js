@@ -1,6 +1,0 @@
-//#region src/icons/copy.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\">\n<g clip-path=\"url(#clip0_1163_38839)\">\n<path d=\"M4 0.700195H9C10.8225 0.700195 12.2998 2.17746 12.2998 4V9C12.2998 10.8225 10.8225 12.2998 9 12.2998H4C2.17746 12.2998 0.700195 10.8225 0.700195 9V4C0.700195 2.17746 2.17746 0.700195 4 0.700195Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M15 5V10C15 12.7614 12.7614 15 10 15H5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_1163_38839\">\n<rect width=\"16\" height=\"16\" fill=\"currentColor\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=copy-CUJ5TJkS.js.map

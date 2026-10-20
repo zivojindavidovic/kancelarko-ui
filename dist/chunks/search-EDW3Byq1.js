@@ -1,6 +1,0 @@
-//#region src/icons/search.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"10\" cy=\"10\" r=\"8.3\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M21.505 22.495C21.7784 22.7683 22.2216 22.7683 22.495 22.495C22.7683 22.2216 22.7683 21.7784 22.495 21.505L21.505 22.495ZM16 16L15.505 16.495L21.505 22.495L22 22L22.495 21.505L16.495 15.505L16 16Z\" fill=\"currentColor\"/></svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=search-EDW3Byq1.js.map

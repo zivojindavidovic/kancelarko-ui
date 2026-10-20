@@ -1,6 +1,0 @@
-//#region src/icons/edit.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_3_140)\"><path d=\"M9.07624 20.1356L22.8372 6.37468C23.0719 6.13996 23.0719 5.7594 22.8372 5.52468L18.7375 1.42499C18.5028 1.19027 18.1222 1.19027 17.8875 1.42499L4.12656 15.1859C4.04766 15.2648 3.99228 15.3641 3.96662 15.4727L2.69852 20.8405C2.59578 21.2754 2.98673 21.6664 3.42165 21.5636L8.78943 20.2956C8.89803 20.2699 8.99734 20.2145 9.07624 20.1356Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M19.7822 8.19235L15.4512 3.86138\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M9.5278 19.6841L4.57812 14.7344\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></g><defs><clipPath id=\"clip0_3_140\"><rect width=\"24\" height=\"24\" fill=\"white\"/></clipPath></defs></svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=edit-DbqoptgZ.js.map

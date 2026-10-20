@@ -1,6 +1,0 @@
-//#region src/icons/e-kadrovik.svg?raw
-var e = "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle opacity=\"0.3\" cx=\"18\" cy=\"18\" r=\"18\" fill=\"#049BE5\"/>\n<g clip-path=\"url(#clip0_868_6209)\">\n<rect x=\"8.58333\" y=\"9.91665\" width=\"18.8333\" height=\"13.8333\" rx=\"2.75\" stroke=\"#049BE5\" stroke-width=\"1.16667\"/>\n<path d=\"M18 23.5V27.25\" stroke=\"#049BE5\" stroke-width=\"1.16667\"/>\n<path d=\"M14.6667 27.6667H21.3333\" stroke=\"#049BE5\" stroke-width=\"1.16667\" stroke-linecap=\"round\"/>\n<circle cx=\"18\" cy=\"15.1667\" r=\"1.91667\" stroke=\"#049BE5\" stroke-width=\"1.16667\"/>\n<path d=\"M23 23.9166C23 21.3853 20.7614 19.3333 18 19.3333C15.2386 19.3333 13 21.3853 13 23.9166\" stroke=\"#049BE5\" stroke-width=\"1.16667\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_868_6209\">\n<rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(8 8.5)\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=e-kadrovik-Ca3LY95x.js.map

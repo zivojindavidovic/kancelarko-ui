@@ -1,6 +1,0 @@
-//#region src/icons/dashboard.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"1.7\" y=\"1.7\" width=\"8.6\" height=\"8.6\" rx=\"3.3\" stroke=\"currentColor\" stroke-width=\"1.4\"/><rect x=\"1.7\" y=\"13.7\" width=\"8.6\" height=\"8.6\" rx=\"3.3\" stroke=\"currentColor\" stroke-width=\"1.4\"/><rect x=\"13.7\" y=\"1.7\" width=\"8.6\" height=\"8.6\" rx=\"3.3\" stroke=\"currentColor\" stroke-width=\"1.4\"/><rect x=\"13.7\" y=\"13.7\" width=\"8.6\" height=\"8.6\" rx=\"3.3\" stroke=\"currentColor\" stroke-width=\"1.4\"/></svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=dashboard-BW_m3Hbw.js.map

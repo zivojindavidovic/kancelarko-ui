@@ -1,6 +1,0 @@
-//#region src/icons/change.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_272_368)\">\n<path d=\"M1.97775 8.37C3.21133 4.33011 7.22134 1.37 11.9778 1.37C16.7342 1.37 20.7442 4.33011 21.9778 8.37\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M23.4272 4.95581L22.392 8.81951L18.5283 7.78424\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M2.32776 15.63C3.56134 19.6699 7.57135 22.63 12.3278 22.63C17.0842 22.63 21.0942 19.6699 22.3278 15.63\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M0.572761 18.4584L1.60804 14.5947L5.47174 15.63\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_272_368\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=change-FLhueKiB.js.map

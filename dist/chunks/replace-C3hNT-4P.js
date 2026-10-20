@@ -1,6 +1,0 @@
-//#region src/icons/replace.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_6271_15696)\">\n<path d=\"M5.5672 2.50216V1.31923C5.5672 1.09064 5.83719 0.976347 6.00031 1.13636L8.13772 3.62223C8.57083 4.06226 8.57083 4.77659 8.13772 5.21662L6.00031 7.38819C5.84282 7.5482 5.5672 7.43391 5.5672 7.20532V6.11954H3.93602C2.34984 6.11954 1.06177 6.85102 1.06177 8.46255V5.77666C1.06177 3.97083 2.50733 2.50216 4.29038 2.50216H5.5672Z\" stroke=\"currentColor\" stroke-width=\"1.61859\" stroke-linejoin=\"round\"/>\n<path d=\"M10.4328 13.4978V14.6808C10.4328 14.9094 10.1628 15.0237 9.99969 14.8636L7.86228 12.3778C7.42917 11.9377 7.42917 11.2234 7.86228 10.7834L9.99969 8.61181C10.1572 8.4518 10.4328 8.56609 10.4328 8.79468V9.88046H12.064C13.6502 9.88046 14.9382 9.14898 14.9382 7.53745V10.2233C14.9382 12.0292 13.4927 13.4978 11.7096 13.4978H10.4328Z\" stroke=\"currentColor\" stroke-width=\"1.61859\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_6271_15696\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=replace-C3hNT-4P.js.map

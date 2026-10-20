@@ -1,6 +1,0 @@
-//#region src/icons/history.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2 12C2 9.57392 2.88198 7.23057 4.4816 5.40655C6.08123 3.58252 8.28941 2.40222 10.6947 2.08555C13.1001 1.76889 15.5385 2.33745 17.5557 3.68531C19.5729 5.03316 21.0313 7.0684 21.6593 9.41181C22.2872 11.7552 22.0418 14.247 20.9687 16.4229C19.8957 18.5988 18.0682 20.3104 15.8268 21.2388C13.5854 22.1672 11.0829 22.2491 8.78561 21.4693C6.48828 20.6895 4.55279 19.1011 3.33975 17\" stroke=\"currentColor\" stroke-width=\"1.27273\" stroke-linecap=\"round\"/>\n<path d=\"M2.24148 19.6516L2.24148 16.0152L5.87784 16.0152\" stroke=\"currentColor\" stroke-width=\"1.27273\" stroke-linecap=\"round\"/>\n<path d=\"M12 6V13.5L16 16.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=history-BRxUBoC_.js.map

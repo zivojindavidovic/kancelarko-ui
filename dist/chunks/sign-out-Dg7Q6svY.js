@@ -1,6 +1,0 @@
-//#region src/icons/sign-out.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_295_445)\">\n<path d=\"M12 6.75L12 5.5C12 3.29086 10.2091 1.5 8 1.5L5.5 1.5C3.29086 1.5 1.5 3.29086 1.5 5.5L1.5 18.5C1.5 20.7091 3.29086 22.5 5.5 22.5L7.99999 22.5C10.2091 22.5 12 20.7091 12 18.5L12 17.25\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M18.3524 7.85242L21.8636 11.3636C22.2151 11.7151 22.2151 12.2849 21.8636 12.6364L18.3524 16.1476\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M21 12L9.00002 12\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_295_445\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=sign-out-Dg7Q6svY.js.map

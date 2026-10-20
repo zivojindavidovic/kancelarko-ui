@@ -1,6 +1,0 @@
-//#region src/icons/profile.svg?raw
-var e = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"\n     xmlns=\"http://www.w3.org/2000/svg\">\n  <g clip-path=\"url(#clip0_305_599)\">\n    <circle cx=\"12\" cy=\"12\" r=\"11.3\"\n            stroke=\"currentColor\" stroke-width=\"1.4\"/>\n    <path d=\"M12 4.7002C13.8225 4.7002 15.2998 6.17746 15.2998 8\n             C15.2998 9.82254 13.8225 11.2998 12 11.2998\n             C10.1775 11.2998 8.7002 9.82254 8.7002 8\n             C8.7002 6.17746 10.1775 4.7002 12 4.7002Z\"\n          stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M20 19.5C18.2433 16.7728 15.3819 15 12.1518 15\n             C8.83755 15 5.91156 16.8662 4.16863 19.7148\"\n          stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n  </g>\n  <defs>\n    <clipPath id=\"clip0_305_599\">\n      <rect width=\"24\" height=\"24\" fill=\"white\"/>\n    </clipPath>\n  </defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=profile-BSmCWDwV.js.map

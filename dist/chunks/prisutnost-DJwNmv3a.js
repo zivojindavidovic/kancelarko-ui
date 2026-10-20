@@ -1,6 +1,0 @@
-//#region src/icons/prisutnost.svg?raw
-var e = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_2157_245219)\">\n    <circle cx=\"11.2796\" cy=\"10.9041\" r=\"2.48195\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n    <path d=\"M11.2812 10.4055V10.8242C11.2812 10.9679 11.3383 11.1058 11.44 11.2074L11.6339 11.4015\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M7.46094 1.7002C8.73119 1.7002 9.76074 2.72974 9.76074 4C9.76074 5.27026 8.73119 6.2998 7.46094 6.2998C6.19068 6.2998 5.16113 5.27026 5.16113 4C5.16113 2.72974 6.19068 1.7002 7.46094 1.7002Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n    <path d=\"M7.33478 8.2467C4.36812 8.2467 1.86145 10.4267 1.06145 13.42C0.781449 14.4467 1.49478 15.48 2.46145 15.48H12.2081\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n  </g>\n  <defs>\n    <clipPath id=\"clip0_2157_245219\">\n      <rect width=\"16\" height=\"16\" fill=\"currentColor\"/>\n    </clipPath>\n  </defs>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=prisutnost-DJwNmv3a.js.map

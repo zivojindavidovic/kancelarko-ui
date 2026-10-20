@@ -1,6 +1,0 @@
-//#region src/icons/location.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 0.700195C11.4464 0.700277 14.2997 3.64908 14.2998 7.3623C14.2998 10.5296 11.9066 12.3644 8.81934 14.5557C8.34511 14.8921 7.69511 14.8841 7.21777 14.5303C5.75692 13.4473 4.3758 12.4534 3.34375 11.2988C2.3324 10.1674 1.7002 8.92669 1.7002 7.3623C1.70027 3.64899 4.55354 0.700195 8 0.700195Z\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<circle cx=\"8\" cy=\"6.94226\" r=\"3\" fill=\"currentColor\"/>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=location-5ZFDfa97.js.map

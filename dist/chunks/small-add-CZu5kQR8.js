@@ -1,6 +1,0 @@
-//#region src/icons/small-add.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_4576_210709)\">\n<circle cx=\"8\" cy=\"8\" r=\"7.2\" stroke=\"currentColor\" stroke-width=\"1.6\"/>\n<path d=\"M4.57031 8H11.4275\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n<path d=\"M7.99219 11.4341L7.99219 4.57694\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_4576_210709\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=small-add-CZu5kQR8.js.map

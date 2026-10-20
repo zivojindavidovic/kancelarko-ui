@@ -1,6 +1,0 @@
-//#region src/icons/download.svg?raw
-var e = "<svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_209_302)\">\n<path d=\"M4.16668 6.00006H3.66668C2.00983 6.00006 0.666679 7.34321 0.666679 9.00006V12.0001C0.666679 13.657 2.00983 15.0001 3.66668 15.0001H11.6667C13.3235 15.0001 14.6667 13.657 14.6667 12.0001V9.00007C14.6667 7.34322 13.3235 6.00007 11.6667 6.00007H11.1667\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M4.90164 9.23492L7.24243 11.5757C7.47674 11.81 7.85664 11.81 8.09095 11.5757L10.4317 9.23492\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M7.66667 11L7.66667 0.666748\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_209_302\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=download-Ceda2wUq.js.map

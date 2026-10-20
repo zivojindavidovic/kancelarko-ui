@@ -1,6 +1,0 @@
-//#region src/icons/employee.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_180_353)\">\n<path d=\"M12.5 1.7002C14.5987 1.7002 16.2998 3.40132 16.2998 5.5C16.2998 7.59868 14.5987 9.2998 12.5 9.2998C10.4013 9.2998 8.7002 7.59868 8.7002 5.5C8.7002 3.40132 10.4013 1.7002 12.5 1.7002Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M12.31 11.87C7.86 11.87 4.1 15.14 2.9 19.63C2.48 21.17 3.55 22.72 5 22.72H19.62\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/>\n</g>\n<circle cx=\"17.8271\" cy=\"15.948\" r=\"4.07292\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M17.8271 14.3712L17.8271 15.8281C17.8271 16.0438 17.9127 16.2506 18.0652 16.4031L18.8916 17.2294\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<defs>\n<clipPath id=\"clip0_180_353\">\n<rect width=\"20.6\" height=\"22.52\" fill=\"white\" transform=\"translate(2 1)\"/>\n</clipPath>\n</defs>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=employee-kJs7DVzy.js.map

@@ -1,6 +1,0 @@
-//#region src/icons/e-postar.svg?raw
-var e = "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M22 13.3637V18.3637C22 20.372 20.3719 22 18.3636 22H5.63636C3.62806 22 2 20.372 2 18.3637V8.36366C2 6.35535 3.62806 4.72729 5.63636 4.72729H12\" stroke=\"currentColor\" stroke-width=\"1.27273\" stroke-linecap=\"round\"/>\n<path d=\"M2.45453 7.90906L9.4302 14.5526C10.8595 15.9138 13.1137 15.8863 14.5093 14.4906L15.1818 13.8181\" stroke=\"currentColor\" stroke-width=\"1.27273\" stroke-linecap=\"round\"/>\n<path d=\"M15.6365 2.63672H21.0906C21.2412 2.63672 21.364 2.75856 21.364 2.90918V10.1543C21.364 10.3602 21.1442 10.4922 20.9626 10.3955L19.1277 9.41406C18.6396 9.15322 18.0491 9.1735 17.5798 9.4668L15.781 10.5908C15.5993 10.7044 15.364 10.5736 15.364 10.3594V2.90918C15.364 2.75856 15.4858 2.63672 15.6365 2.63672Z\" stroke=\"currentColor\" stroke-width=\"1.27273\"/>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=e-postar-B_qQIuPn.js.map

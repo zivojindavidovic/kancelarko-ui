@@ -1,6 +1,0 @@
-//#region src/icons/expired-document.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_5644_9224)\">\n<path d=\"M7.78664 0.666626H6C3.79086 0.666626 2 2.45749 2 4.66663V11.1732C2 13.3824 3.79086 15.1732 6 15.1732H10C12.2091 15.1732 14 13.3824 14 11.1732V6.77428C14 5.96124 13.67 5.18301 13.0856 4.61779L9.8722 1.51013C9.31275 0.969084 8.56492 0.666626 7.78664 0.666626Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M8.33333 0.989136V3.82467C8.33333 4.92924 9.22876 5.82467 10.3333 5.82467H13.6667\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M8 10.193L8 7.83325\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<circle cx=\"8\" cy=\"12.5645\" r=\"0.7\" fill=\"currentColor\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_5644_9224\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=expired-document-CLoCF9mM.js.map

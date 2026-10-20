@@ -1,6 +1,0 @@
-//#region src/icons/certificate.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_5375_9516)\">\n<circle cx=\"8\" cy=\"10\" r=\"2\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M5.2 10H3C1.89543 10 1 9.10457 1 8V3C1 1.89543 1.89543 1 3 1H13C14.1046 1 15 1.89543 15 3V8C15 9.10457 14.1046 10 13 10H10.3333\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M4 3.62341H12\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M5.4653 6H10.5347\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M6 14.1536V11L8 13L10 11V14.1536C10 14.3075 9.83333 14.4038 9.7 14.3268L8.1 13.403C8.03812 13.3673 7.96188 13.3673 7.9 13.403L6.3 14.3268C6.16667 14.4038 6 14.3075 6 14.1536Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_5375_9516\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=certificate-PRcJZAGU.js.map

@@ -1,6 +1,0 @@
-//#region src/icons/expired.svg?raw
-var e = "<svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 15C6.61553 15 5.26215 14.5895 4.11101 13.8203C2.95986 13.0511 2.06266 11.9579 1.53284 10.6788C1.00303 9.3997 0.864407 7.99223 1.1345 6.63437C1.4046 5.2765 2.07129 4.02922 3.05025 3.05025C4.02922 2.07128 5.2765 1.4046 6.63437 1.1345C7.99223 0.864406 9.3997 1.00303 10.6788 1.53284C11.9579 2.06266 13.0511 2.95986 13.8203 4.11101C14.5895 5.26215 15 6.61553 15 8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M10.8914 10.7227L14.7065 14.5377\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M14.7065 10.7227L10.8914 14.5377\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M5 8.14668L6.27001 9.67069C6.70363 10.191 7.51824 10.1388 7.88189 9.56738L10.152 6\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</svg>";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=expired-724Q6IOm.js.map

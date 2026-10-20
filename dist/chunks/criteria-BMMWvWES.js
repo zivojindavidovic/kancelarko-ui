@@ -1,6 +1,0 @@
-//#region src/icons/criteria.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_5212_7806)\">\n<path d=\"M6.66666 2.66663L14.6667 2.66663\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M0.666664 2.7645L1.51333 3.7805C1.80242 4.1274 2.34549 4.09259 2.58792 3.71163L4.10136 1.33337\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M6.66665 8L14.6666 8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M0.666656 8.09775L1.51333 9.11375C1.80241 9.46065 2.34548 9.42584 2.58792 9.04488L4.10135 6.66663\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M6.66665 13.3334L14.6666 13.3334\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M0.666656 13.4311L1.51333 14.4471C1.80241 14.794 2.34548 14.7592 2.58792 14.3783L4.10135 12\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_5212_7806\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=criteria-BMMWvWES.js.map

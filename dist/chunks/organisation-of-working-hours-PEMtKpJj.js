@@ -1,6 +1,0 @@
-//#region src/icons/organisation-of-working-hours.svg?raw
-var e = "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_180_345)\">\n<path d=\"M5.40039 3.7002H19.3027C21.3462 3.70021 23.0029 5.35695 23.0029 7.40039V19.5996C23.0029 21.6431 21.3462 23.2998 19.3027 23.2998H5.40039C3.35694 23.2998 1.7002 21.6431 1.7002 19.5996V7.40039C1.7002 5.35694 3.35694 3.7002 5.40039 3.7002Z\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M8 1.44812V5.44812\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<path d=\"M16 1.44812V5.44812\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n<circle cx=\"12.3513\" cy=\"13.9002\" r=\"5.36669\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<path d=\"M12.3513 12.0802V13.9551C12.3513 14.0612 12.3935 14.1629 12.4685 14.238L13.5647 15.3341\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_180_345\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=organisation-of-working-hours-PEMtKpJj.js.map

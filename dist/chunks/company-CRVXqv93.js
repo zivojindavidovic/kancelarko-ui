@@ -1,6 +1,0 @@
-//#region src/icons/company.svg?raw
-var e = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_403_1446)\">\n<rect x=\"2\" y=\"1\" width=\"12\" height=\"14\" rx=\"1\" stroke=\"currentColor\" stroke-width=\"1.4\"/>\n<rect x=\"5\" y=\"3.77515\" width=\"2.44949\" height=\"2.44949\" rx=\"1\" fill=\"currentColor\"/>\n<rect x=\"9\" y=\"3.77515\" width=\"2.44949\" height=\"2.44949\" rx=\"1\" fill=\"currentColor\"/>\n<rect x=\"9\" y=\"7.77515\" width=\"2.44949\" height=\"2.44949\" rx=\"1\" fill=\"currentColor\"/>\n<rect x=\"5\" y=\"7.77515\" width=\"2.44949\" height=\"2.44949\" rx=\"1\" fill=\"currentColor\"/>\n<mask id=\"path-6-inside-1_403_1446\" fill=\"white\">\n<rect x=\"5\" y=\"12\" width=\"6\" height=\"3\" rx=\"0.6\"/>\n</mask>\n<rect x=\"5\" y=\"12\" width=\"6\" height=\"3\" rx=\"0.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" mask=\"url(#path-6-inside-1_403_1446)\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_403_1446\">\n<rect width=\"16\" height=\"16\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n";
-//#endregion
-export { e as default };
-
-//# sourceMappingURL=company-CRVXqv93.js.map
