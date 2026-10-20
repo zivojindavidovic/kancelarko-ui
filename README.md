@@ -246,3 +246,71 @@ npm run dev                   # playground with every component; ?theme=light fo
 npm run build                 # dist/kancelarko-ui.js + dist/kancelarko-ui.css (+ fonts/images in dist/assets)
 npm run build:playground
 ```
+
+## Publishing
+
+The package goes to the npm registry under the `@kancelarko` scope. `dist/` is not in git: the
+`prepare` script builds it during `npm publish`, so a release is a version bump, a tag and one
+publish command.
+
+### One-time setup
+
+1. Create an account on [npmjs.com](https://www.npmjs.com) and get added to the `kancelarko`
+   organisation (the scope owner). Turn on 2FA, npm asks for it on publish.
+2. Log in from the terminal:
+
+```bash
+npm login
+npm whoami                    # prints your username when the login worked
+```
+
+### Release
+
+```bash
+git checkout master && git pull
+git status                    # must be clean: npm version refuses a dirty tree
+
+npm install
+npm run build                 # has to pass; npm run dev for a last look at the playground
+
+npm version patch             # 1.4.2 -> 1.4.3  fixes only
+npm version minor             # 1.4.2 -> 1.5.0  new component, prop, icon, CSS variable
+npm version major             # 1.4.2 -> 2.0.0  breaking: renamed/removed prop or component, changed variable, dropped Vue version
+```
+
+`npm version` writes the number into `package.json` and `package-lock.json`, commits it and tags
+`vX.Y.Z`. That tag is what `npm install git+https://...#vX.Y.Z` points at, so the tag and the
+registry version always match.
+
+Check what will be uploaded, then publish:
+
+```bash
+npm pack --dry-run            # lists the files: dist, src, scripts, docs, README.md (the `files` field)
+npm publish --access public   # builds dist/ (prepare) and uploads; add --otp=123456 when asked for the 2FA code
+git push && git push --tags
+```
+
+Scoped packages are private by default, which needs a paid organisation. `--access public` on the
+first publish makes the package public; after that the flag is remembered. To stop typing it, add
+to `package.json`:
+
+```json
+"publishConfig": { "access": "public" }
+```
+
+Verify with `npm view @kancelarko/ui version` and update a project: `npm install @kancelarko/ui@X.Y.Z`
+(its `postinstall` refreshes `public/tinymce` on its own).
+
+### Fixing a bad release
+
+A version number can never be reused, so publish a new patch instead of overwriting. Within 72 hours
+`npm unpublish @kancelarko/ui@X.Y.Z` removes a version; later use
+`npm deprecate @kancelarko/ui@X.Y.Z "use X.Y.Z+1"`, which warns on install but keeps it available.
+
+### Without the public registry
+
+The package does not have to be on npmjs.com at all: `npm install git+https://...#vX.Y.Z` installs
+a tagged commit and builds it on the way (see Install), so tagging with `npm version` plus
+`git push --tags` is a complete release. For a private registry (Verdaccio, GitHub Packages, Nexus)
+set `publishConfig.registry` in `package.json` and log in to it with `npm login --registry <url>`;
+GitHub Packages additionally requires the scope to equal the GitHub organisation name.
