@@ -315,6 +315,12 @@ to `package.json`:
 Verify with `npm view @zivojindavidovic/ui version` and update a project: `npm install @zivojindavidovic/ui@X.Y.Z`
 (its `postinstall` refreshes `public/tinymce` on its own).
 
+The very first publish of a package is held by npm for review: the CLI prints "Your package is being
+processed", the package page shows a placeholder version `0.0.0-stage` ("Temporary Holding Version")
+and `npm view` lists only that version. There is nothing to approve on your side; the real version
+appears by itself, usually within minutes, sometimes longer. Do not install the package into a project
+until `npm view` shows the real version, the placeholder is empty.
+
 ### Fixing a bad release
 
 A version number can never be reused, so publish a new patch instead of overwriting. Within 72 hours
