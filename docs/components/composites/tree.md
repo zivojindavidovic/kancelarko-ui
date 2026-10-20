@@ -38,7 +38,7 @@ Your endpoint usually returns a flat list (`id` + `parent`). `buildTreeStructure
 nests it and, on request, hangs employees under their unit:
 
 ```js
-import { buildTreeStructure } from '@kancelarko/ui'
+import { buildTreeStructure } from '@zivojindavidovic/ui'
 
 async mounted() {
     this.loading = true

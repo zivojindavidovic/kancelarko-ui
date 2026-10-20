@@ -9,7 +9,7 @@ const res = await this.$alert.confirm({ title: 'Delete employee?', text: 'This c
 if (res.isConfirmed) await axios.delete(`/api/employees/${id}`)
 ```
 
-The same object is available anywhere as `import { alert } from '@kancelarko/ui'` and in the Composition API as `inject('alert')`. There is no Blade tag; call it from a component's methods.
+The same object is available anywhere as `import { alert } from '@zivojindavidovic/ui'` and in the Composition API as `inject('alert')`. There is no Blade tag; call it from a component's methods.
 
 ## Methods
 

@@ -32,7 +32,7 @@ function findTinymce() {
 const tinymceDir = findTinymce()
 
 if (!tinymceDir) {
-    console.error('[@kancelarko/ui] Paket "tinymce" nije pronadjen, TinyMCE nije kopiran u public/tinymce.')
+    console.error('[@zivojindavidovic/ui] Paket "tinymce" nije pronadjen, TinyMCE nije kopiran u public/tinymce.')
     process.exit(1)
 }
 
@@ -47,4 +47,4 @@ const iconPackTarget = join(target, 'icons', 'kancelarko')
 mkdirSync(iconPackTarget, { recursive: true })
 cpSync(join(packageRoot, 'src', 'helpers', 'tinymce-icons.js'), join(iconPackTarget, 'icons.js'))
 
-console.log(`[@kancelarko/ui] TinyMCE + Kancelarko icon pack -> ${target}`)
+console.log(`[@zivojindavidovic/ui] TinyMCE + Kancelarko icon pack -> ${target}`)

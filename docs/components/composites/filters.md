@@ -23,7 +23,7 @@ drops the edits, Reset puts both back to `getInitialFilters()`. The rest of the 
 </template>
 
 <script>
-import { FilterMixin, toSqlDate } from '@kancelarko/ui'
+import { FilterMixin, toSqlDate } from '@zivojindavidovic/ui'
 
 export default {
     mixins: [FilterMixin],

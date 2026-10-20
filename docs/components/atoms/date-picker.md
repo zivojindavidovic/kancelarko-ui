@@ -80,7 +80,7 @@ methods: {
 
 ## Notes
 
-- The model is a real Date, not a string. Convert before posting (`toSqlDate`, `toSqlDateTimeFormat` from `@kancelarko/ui`) and parse what your endpoint returns with `toJSDate`.
+- The model is a real Date, not a string. Convert before posting (`toSqlDate`, `toSqlDateTimeFormat` from `@zivojindavidovic/ui`) and parse what your endpoint returns with `toJSDate`.
 - The chip always formats as `dd.MM.yyyy`, `dd.MM.yyyy HH:mm`, `HH:mm`, `MM.yyyy` or `yyyy`; `format` does not change it.
 - `datetime` waits for the select button. For instant apply pass `:auto-apply="true" :show-actions="false"`.
 - The × is hidden when `readonly` or `disabled`.

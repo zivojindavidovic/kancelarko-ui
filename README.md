@@ -1,4 +1,4 @@
-# @kancelarko/ui
+# @zivojindavidovic/ui
 
 Vue 3 components, the Kancelarko page shell (sidebar, header, page section) and the dark/light
 theme, as one npm package. Install it, register the plugin, and a new project looks
@@ -9,7 +9,7 @@ Component docs are in [`docs/`](docs/components): one page per component folder.
 ## Install
 
 ```bash
-npm install @kancelarko/ui@1.4.2                                   # from the registry
+npm install @zivojindavidovic/ui@1.4.2                                   # from the registry
 npm install git+https://github.com/zivojindavidovic/kancelarko-ui.git#v1.4.2   # straight from git
 npm install ../kancelarko-ui                                       # local checkout
 ```
@@ -24,8 +24,8 @@ install run it yourself so `dist/` exists. Nothing else to run: the plugin below
 
 ```js
 import { createApp } from 'vue'
-import KancelarkoUI from '@kancelarko/ui'
-import '@kancelarko/ui/style.css'      // Bootstrap 5 + theme + components + font + icons
+import KancelarkoUI from '@zivojindavidovic/ui'
+import '@zivojindavidovic/ui/style.css'      // Bootstrap 5 + theme + components + font + icons
 
 createApp(App)
     .use(KancelarkoUI, {
@@ -41,7 +41,7 @@ The plugin registers `<k-icon>` and every `K*` component, installs vue3-toastify
 and adds `this.$toast` / `this.$alert` (`inject('toast')`, `inject('alert')` in the Composition API).
 
 Components are `<KTextInput>` in `.vue` files and `<k-text-input>` in Blade. With `components:
-false` import what you use: `import { KTextInput, KSelect, FilterMixin } from '@kancelarko/ui'`.
+false` import what you use: `import { KTextInput, KSelect, FilterMixin } from '@zivojindavidovic/ui'`.
 
 Older pages use `AppTextInput`, `AppSelect`... Turn on `legacyNames: true` until you rename them (`sed -i 's/App\([A-Z]\)/K\1/g' *.vue`).
 
@@ -89,12 +89,12 @@ Skip `style.css` when the project already ships Bootstrap:
 
 ```scss
 @import 'bootstrap/scss/bootstrap';
-@import '@kancelarko/ui/scss/kancelarko';    // theme + components, no Bootstrap
+@import '@zivojindavidovic/ui/scss/kancelarko';    // theme + components, no Bootstrap
 ```
 
-Partials: `@kancelarko/ui/scss/themes` (all theme variables), `@kancelarko/ui/scss/components`
+Partials: `@zivojindavidovic/ui/scss/themes` (all theme variables), `@zivojindavidovic/ui/scss/components`
 (all styles), or one component's files from its folder, e.g.
-`@kancelarko/ui/src/components/atoms/text-input/text-input`.
+`@zivojindavidovic/ui/src/components/atoms/text-input/text-input`.
 
 ## Theme
 
@@ -111,7 +111,7 @@ inside TinyMCE. Dark is dark translucent panels with light text; light is light 
 dark text. Both use blue as the accent and have their own body background image.
 
 ```js
-import { setTheme, toggleTheme, getTheme, initTheme, onThemeChange } from '@kancelarko/ui'
+import { setTheme, toggleTheme, getTheme, initTheme, onThemeChange } from '@zivojindavidovic/ui'
 
 setTheme('light')                               // on <html>
 setTheme('light', { target: document.body })
@@ -249,20 +249,34 @@ npm run build:playground
 
 ## Publishing
 
-The package goes to the npm registry under the `@kancelarko` scope. `dist/` is not in git: the
+The package goes to the npm registry as `@zivojindavidovic/ui`. `dist/` is not in git: the
 `prepare` script builds it during `npm publish`, so a release is a version bump, a tag and one
 publish command.
 
 ### One-time setup
 
-1. Create an account on [npmjs.com](https://www.npmjs.com) and get added to the `kancelarko`
-   organisation (the scope owner). Turn on 2FA, npm asks for it on publish.
-2. Log in from the terminal:
+1. The package lives under the personal scope `@zivojindavidovic`, so only that npmjs.com account
+   can publish it. A scope has to exist as a user or an organisation, otherwise publishing fails with
+   `404 Scope not found`; to hand the package to a company scope later, create the organisation at
+   [npmjs.com/org/create](https://www.npmjs.com/org/create) (free for public packages), rename the
+   package and publish it there.
+2. Log in from the terminal and turn on 2FA. The registry refuses to publish without it
+   (`E403 ... Two-factor authentication ... is required to publish packages`):
 
 ```bash
 npm login
-npm whoami                    # prints your username when the login worked
+npm whoami                                  # prints your username when the login worked
 ```
+
+   2FA is easiest on the site: avatar → Account → Two-Factor Authentication → Enable 2FA → security
+   key. The site offers only that method, but a phone works as the key: the browser shows a QR code,
+   the phone scans it and keeps the passkey, no USB key needed. The CLI then opens the browser
+   whenever a second factor is required, there is nothing to type. The alternative,
+   `npm profile enable-2fa auth-and-writes`, sets up an authenticator app (QR code in the terminal)
+   but first waits for a one-time code sent by e-mail, which can take a while to arrive. Either way,
+   save the recovery codes away from the computer and check with `npm profile get`
+   ("two-factor auth: auth-and-writes"). For CI use a granular access token with "Bypass 2FA"
+   instead (Access Tokens → Generate New Token → Granular), never a personal login.
 
 ### Release
 
@@ -298,14 +312,14 @@ to `package.json`:
 "publishConfig": { "access": "public" }
 ```
 
-Verify with `npm view @kancelarko/ui version` and update a project: `npm install @kancelarko/ui@X.Y.Z`
+Verify with `npm view @zivojindavidovic/ui version` and update a project: `npm install @zivojindavidovic/ui@X.Y.Z`
 (its `postinstall` refreshes `public/tinymce` on its own).
 
 ### Fixing a bad release
 
 A version number can never be reused, so publish a new patch instead of overwriting. Within 72 hours
-`npm unpublish @kancelarko/ui@X.Y.Z` removes a version; later use
-`npm deprecate @kancelarko/ui@X.Y.Z "use X.Y.Z+1"`, which warns on install but keeps it available.
+`npm unpublish @zivojindavidovic/ui@X.Y.Z` removes a version; later use
+`npm deprecate @zivojindavidovic/ui@X.Y.Z "use X.Y.Z+1"`, which warns on install but keeps it available.
 
 ### Without the public registry
 

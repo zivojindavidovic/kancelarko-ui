@@ -108,7 +108,7 @@
         </template>
 
         <!-- ===== composites/page/KPageSection.vue: okvir sadrzaja ===== -->
-        <KPageSection title="@kancelarko/ui – sve komponente" icon="icons-3d/benefits">
+        <KPageSection title="@zivojindavidovic/ui – sve komponente" icon="icons-3d/benefits">
             <template #actions>
                 <div class="main-section-header-button d-flex flex-wrap gap-3">
                     <button class="btn btn-outline-primary btn-sm" @click="toggleTheme()">Tema: {{ theme }}</button>

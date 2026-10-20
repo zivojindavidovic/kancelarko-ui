@@ -1,5 +1,5 @@
 {
-  "name": "@kancelarko/ui",
+  "name": "@zivojindavidovic/ui",
   "version": "0.2.0",
   "description": "Kancelarko UI: Vue 3 components, page shell (sidebar, header) and the dark/light theme.",
   "repository": {

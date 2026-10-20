@@ -121,9 +121,9 @@ Keep this structure and the styles still work:
 | Symptom | Fix |
 |---|---|
 | blank page, console says runtime compilation is not supported | add the `vue` alias above |
-| components render unstyled | `import '@kancelarko/ui/style.css'` |
+| components render unstyled | `import '@zivojindavidovic/ui/style.css'` |
 | `Failed to resolve component: k-sidebar` | `app.use(KancelarkoUI)` before `mount`; kebab-case in Blade |
-| buttons look different in two places | Bootstrap loaded twice; keep `style.css` or your own Bootstrap + `@kancelarko/ui/scss/kancelarko`, not both |
+| buttons look different in two places | Bootstrap loaded twice; keep `style.css` or your own Bootstrap + `@zivojindavidovic/ui/scss/kancelarko`, not both |
 | content does not follow the collapsed sidebar | structure is not `.main-section-wrapper > .sidebar + .content` |
 | active menu item not highlighted | `url` differs from the browser path; add `activeUrls` |
 | panel opens in the wrong place | the `KHeaderModal` is outside `KHeader`'s default slot or its `id` differs from `modalId` |

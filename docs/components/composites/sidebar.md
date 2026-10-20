@@ -122,7 +122,7 @@ go({ item, event }) {
 ## State
 
 ```js
-import { layoutStore } from '@kancelarko/ui'
+import { layoutStore } from '@zivojindavidovic/ui'
 
 layoutStore.isSidebarMinimized   // collapsed (desktop)
 layoutStore.isSidebarOpen        // drawer open (mobile)

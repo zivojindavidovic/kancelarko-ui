@@ -108,7 +108,7 @@ Page size, search and the table. `FilterMixin` provides `tableRefs`, `reloadTabl
 
 <script>
 import axios from 'axios'
-import { FilterMixin } from '@kancelarko/ui'
+import { FilterMixin } from '@zivojindavidovic/ui'
 
 export default {
     mixins: [FilterMixin],

@@ -8,7 +8,7 @@ this.$toast.error(e.response?.data?.message ?? 'Save failed.', { autoClose: 6000
 this.$toast('Plain message')
 ```
 
-The same object is available anywhere as `import { customToast } from '@kancelarko/ui'` and in the Composition API as `inject('toast')`. There is no Blade tag; call it from a component's methods.
+The same object is available anywhere as `import { customToast } from '@zivojindavidovic/ui'` and in the Composition API as `inject('toast')`. There is no Blade tag; call it from a component's methods.
 
 ## Methods
 
@@ -50,7 +50,7 @@ Anything else vue3-toastify accepts (`pauseOnHover`, `hideProgressBar`, `onClose
 Built-in icons: `circle-icons/birthday`, `circle-icons/contract-expiring`, `circle-icons/e-delovodnik`, `circle-icons/e-invoice`, `circle-icons/e-postar`, `circle-icons/holiday-request`, `circle-icons/info`, `circle-icons/invoice`, `circle-icons/jubilej`, `circle-icons/kadrovik`, `circle-icons/privilegije`, `circle-icons/slava`, `circle-icons/working-hours`, `circle-icons/actions`, `circle-icons/pdf`, `obligation`, `folder`, `time`, `notification-active`. Any other string is used as `<img src>`.
 
 ```js
-import { customToast } from '@kancelarko/ui'
+import { customToast } from '@zivojindavidovic/ui'
 
 const notify = customToast.getNotifyObject()
 notify.title.text = 'New leave request'

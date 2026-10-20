@@ -11,7 +11,7 @@ In Blade: `<k-text-editor v-model="form.body"></k-text-editor>`.
 ## Setup
 
 TinyMCE is not bundled; it is loaded from `/tinymce/tinymce.min.js` in your public folder. Every
-`npm install` of `@kancelarko/ui` copies TinyMCE and the Kancelarko icon pack to `public/tinymce`,
+`npm install` of `@zivojindavidovic/ui` copies TinyMCE and the Kancelarko icon pack to `public/tinymce`,
 so there is nothing to run. Keep `public/tinymce` out of git.
 
 ## Props

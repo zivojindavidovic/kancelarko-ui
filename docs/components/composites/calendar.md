@@ -53,7 +53,7 @@ A FullCalendar event. `type` and `icon` live in `extendedProps`, next to anythin
 
 ## Types
 
-`getCalendarTypeUiMap()` (exported from `@kancelarko/ui`) returns the built-in `{ type: { class, icon } }`:
+`getCalendarTypeUiMap()` (exported from `@zivojindavidovic/ui`) returns the built-in `{ type: { class, icon } }`:
 
 | `type` | class | icon | `type` | class | icon |
 |---|---|---|---|---|---|
